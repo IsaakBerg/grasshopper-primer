@@ -1,11 +1,4 @@
-### Welcome to your project!
 
-###Info to clone in git
-https://git.gitbook.com/gilakos/grasshopper-primer.git
-
----
-*generic info above (keep for now)*
----
 
 
 #Preface
