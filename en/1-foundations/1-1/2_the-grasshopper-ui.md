@@ -39,16 +39,17 @@ This provides a great way to switch between the plug-in and Rhino because it
 minimizes Grasshopper without moving it to the bottom of the screen or behind
 other windows. Note that if you instead close the editor, any of the geometry
 preview visible in the Rhino viewport will disappear and the editor will be
-hidden but the file won’t actually be closed and you won't have lost your work.
+hidden but files won’t yet be closed and unsaved work retains intact in memory.
 If you merely re-run the “Grasshopper” command in the Rhino dialog box, the
 window will come back in the same state with the same files loaded. This is the
 persistent nature of the Grasshopper plugin. Once it is launched from the
 command prompt, it will stay active in memory until that instance of Rhino is
 closed or the user forces it to exit.
 
->To force Grasshopper to quit and release its memory without closing Rhino, one
-can invoke the GrasshopperUnloadPlugin command from within Rhino. This method
-should be used with caution because unsaved edits in Grasshopper will be lost.
+>There is a command available within Rhino which will force Grasshopper to quit
+and release its memory without closing Rhino.  One should use it only if they
+understand that all unsaved edits in Grasshopper will be lost. The command is:
+GrasshopperUnloadPlugin
 
 
 ####1.1.2.2. MAIN MENU BAR
