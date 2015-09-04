@@ -108,7 +108,8 @@ file or files to peel back the canvas and check or switch modes by mouse hover.
 There is no need to click the mouse on an icon to switch modes, just "fly-by".
 This facilitates simple last-minute drop-mode changes during the drag and drop.
 The drop-mode selector also shows keys with each mode's initial, a strong hint
-on the best way to mode-switch: tap the initial of the target mode mid-drag.
+on the best way to mode-switch: tap the initial of the target mode on the
+keyboard, mid-drag.
 
 Here are the five modes to choose from for the action you want Grasshopper to
 take in response to dragging-and-dropping appropriate files onto the canvas:
