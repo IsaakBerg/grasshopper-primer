@@ -53,7 +53,7 @@ GrasshopperUnloadPlugin
 
 
 ####1.1.2.2. MAIN MENU BAR
-The title bar is similar to typical Windows menus, except for the file browser
+The menu bar is similar to typical Windows menus, except for the file browser
 control on the right (see next section). The File menu provides typical functions
 (e.g. New File, Open, Save, etc.) in addition to a few utility tools which let you
 export images of your current Grasshopper document (see Export Quick Image
