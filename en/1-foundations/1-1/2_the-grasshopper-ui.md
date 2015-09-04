@@ -1,8 +1,6 @@
 ### 1.1.2. THE GRASSHOPPER UI
 
-#####Grasshopper’s visual “plug-and-play” style gives designers the ability to
-combine creative problem solving with novel rule systems through the use of a
-fluid graphical interface.
+#####Grasshopper’s visual “plug-and-play” style gives designers the ability to combine creative problem solving with novel rule systems through the use of a fluid graphical interface.
 
 Let’s start by exploring Grasshopper’s user interface UI. Grasshopper is a
 visual programming application where you are able to create programs, called
@@ -24,27 +22,33 @@ will be very familiar to Rhino users. Let’s look at a few features of the inte
 5. Canvas toolbar.
 6. Canvas.
 7. This area, indicated by a grid of rectangular boxes, provides an interface
- with which to open recently accessed file. The 3x3 menu shows the files most
+ with which to open recently accessed files. The 3x3 menu shows the files most
  recently accessed (chronologically) and will display a red rectangular box if
  the file cannot be found (which can occur if you move a file to a new folder
  or delete it).
  8. The status bar tells you what version of Grasshopper is currently installed
  on your machine. If a newer version is available, a pop-up menu will appear in
- your tray providing instructions on how to download the latest version.
+ your system tray providing instructions on how to download the latest version.
 
 
-####1.1.2.1. THE WINDOWS TITLE BAR
-The Editor Window title bar behaves differently from most other dialogs in
-Microsoft Windows. If the window is not minimized or maximized, double
-clicking the title bar will collapse the dialog into a minimized bar on your
-screen. This is a great way to switch between the plug-in and Rhino because it
-minimizes the Editor without moving it to the bottom of the screen or behind
-other windows. Note that if you close the Editor, the Grasshopper geometry
-preview in the Rhino viewport will disappear, but the file won’t actually be
-closed. The next time you run the “Grasshopper” command in the Rhino dialog
-box, the window will come back in the same state with the same files loaded.
-This is because once it is launched from the command prompt, your session
-of Grasshopper stays active until that instance of Rhino is closed.
+####1.1.2.1. GRASSHOPPER'S TITLE BAR
+Grasshopper's editor window's title bar has different behavior than typical
+dialog title bars. If the window is not minimized or maximized, double-clicking
+its title bar will collapse the editor into a minimized titlebar left in place.
+This provides a great way to switch between the plug-in and Rhino because it
+minimizes Grasshopper without moving it to the bottom of the screen or behind
+other windows. Note that if you instead close the editor, any of the geometry
+preview visible in the Rhino viewport will disappear and the editor will be
+hidden but the file won’t actually be closed and you won't have lost your work.
+If you merely re-run the “Grasshopper” command in the Rhino dialog box, the
+window will come back in the same state with the same files loaded. This is the
+persistent nature of the Grasshopper plugin. Once it is launched from the
+command prompt, it will stay active in memory until that instance of Rhino is
+closed or the user forces it to exit.
+
+>To force Grasshopper to quit and release its memory without closing Rhino, one
+can invoke the GrasshopperUnloadPlugin command from within Rhino. This method
+should be used with caution because unsaved edits in Grasshopper will be lost.
 
 
 ####1.1.2.2. MAIN MENU BAR
@@ -75,7 +79,7 @@ shortcut command for a window that was not the active one at that moment.
 settings.
 
 ####1.1.2.3. FILE FORMATS, FILE INSERT METHODS AND THE FILE BROWSER CONTROL
-> Grasshopper is a plug-in that works “on top” of Rhino and as such has its own
+Grasshopper is a plug-in that works “on top” of Rhino and as such has its own
 file types. The default file type is a binary data file, saved with an
 extensionof .gh.  The other file type is known as a Grasshopper XML file, which
 uses the extension .ghx. The XML (Extensible Markup Language) file type uses
@@ -131,10 +135,10 @@ under the File menu on the Main Menu Bar. When the active instance of Rhino is
 closed, a pop-up dialog box will appear asking whether or not you want to save
 any Grasshopper files that were open when Rhino was shut down.
 
->Autosave only works if the file has already been saved at least once.
+##### Autosave only works if the file has already been saved at least once.
 
 ![IMAGE](images/1-1-2/1-1-2_003-autosave.png)
->Drag and Drop Files onto the Canvas.
+>The drop-mode UI revealed during drag-and-drop of valid files onto the Canvas.
 
 ####1.1.2.4. COMPONENT PALETTES
 This area organizes components into categories and sub-categories. Categories
