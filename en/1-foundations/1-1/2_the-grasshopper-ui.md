@@ -1,6 +1,8 @@
 ### 1.1.2. THE GRASSHOPPER UI
 
-#####Grasshopper’s visual “plug-and-play” style gives designers the ability to combine creative problem solving with novel rule systems through the use of a fluid graphical interface.
+#####Grasshopper’s visual “plug-and-play” style gives designers the ability to
+combine creative problem solving with novel rule systems through the use of a
+fluid graphical interface.
 
 Let’s start by exploring Grasshopper’s user interface UI. Grasshopper is a
 visual programming application where you are able to create programs, called
@@ -21,8 +23,14 @@ will be very familiar to Rhino users. Let’s look at a few features of the inte
 4. Component palettes.
 5. Canvas toolbar.
 6. Canvas.
-7. This area, indicated by a grid of rectangular boxes, provides an interface with which to open recently accessed file. The 3x3 menu shows the files most recently accessed (chronologically) and will display a red rectangular box if the file cannot be found (which can occur if you move a file to a new folder or delete it).
-8. The status bar tells you what version of Grasshopper is currently installed on your machine. If a newer version is available, a pop-up menu will appear in your tray providing instructions on how to download the latest version.
+7. This area, indicated by a grid of rectangular boxes, provides an interface
+ with which to open recently accessed file. The 3x3 menu shows the files most
+ recently accessed (chronologically) and will display a red rectangular box if
+ the file cannot be found (which can occur if you move a file to a new folder
+ or delete it).
+ 8. The status bar tells you what version of Grasshopper is currently installed
+ on your machine. If a newer version is available, a pop-up menu will appear in
+ your tray providing instructions on how to download the latest version.
 
 
 ####1.1.2.1. THE WINDOWS TITLE BAR
@@ -42,7 +50,7 @@ of Grasshopper stays active until that instance of Rhino is closed.
 ####1.1.2.2. MAIN MENU BAR
 The title bar is similar to typical Windows menus, except for the file browser
 control on the right (see next section). The File menu provides typical functions
-(eg. New File, Open, Save, etc.) in addition to a few utility tools which let you
+(e.g. New File, Open, Save, etc.) in addition to a few utility tools which let you
 export images of your current Grasshopper document (see Export Quick Image
 and Export Hi-Res Image). You can control different aspects of the user interface
 using the View and Display menus, while the Solution menu lets you manage
@@ -50,33 +58,72 @@ different attributes about how the solver computes the graph solution.
 
 It is worth noting that many application settings can be controlled through the
 Preferences dialog box found under the File menu. The Author section allows
-you to set personal metadata which will be stored with each Grasshopper
+you to set personal meta-data which will be stored with each Grasshopper
 document while the Display section gives you fine grain control over the look
 and feel of the interface. The Files section lets you specify things like how
 often and where to store automatically saved file (in case the application is
 inadvertently closed or crashes). Finally, the Solver section lets you manage core
-and third-party plugins which can extend functionality.
+and third-party plug-ins which can extend functionality.
 
-> Note: Be careful when using shortcuts since they are handled by the active window which could either be Rhino, the Grasshopper canvas or any other window inside Rhino. It is quite easy to use a shortcut command, only to realize that you had the wrong active window selected and accidentally invoked the wrong command.
+> Note: Be careful when using shortcuts since they are handled by the active
+window which could either be Rhino, the Grasshopper canvas or any other window
+inside Rhino. It is easy to accidentally invoke the wrong command by using a
+shortcut command for a window that was not the active one at that moment.
 
 ![IMAGE](images/1-1-2/1-1-2_002-settings.png)
->The Preferences dialog allows you to set many of Grasshopper’s application settings.
+>The Preferences dialog allows you to set many of Grasshopper’s application
+settings.
 
-####1.1.2.3. FILE BROWSER CONTROL
-The File Browser allows you to quickly switch between different loaded files by
-selecting them through this drop-down list. Accessing your open files through
-the File Browser drop-down list enables you to quickly copy and paste items
-from open definitions. Just click on the active file name in the browser control
-window and a cascading list of all open files will be displayed (along with a small
-thumbnail picture of each open definition) for easy access. You can also hit
-Alt+Tab to quickly switch between any open Grasshopper documents.
+####1.1.2.3. FILE FORMATS, FILE INSERT METHODS AND THE FILE BROWSER CONTROL
+> Grasshopper is a plug-in that works “on top” of Rhino and as such has its own
+file types. The default file type is a binary data file, saved with an
+extensionof .gh.  The other file type is known as a Grasshopper XML file, which
+uses the extension .ghx. The XML (Extensible Markup Language) file type uses
+tags to define objects and object attributes (much like an .HTML document) but
+uses custom tags to define objects and the data within each object. Because XML
+files are formatted as text documents, you could open up any Grasshopper XML
+file in a text editor like Notepad to see the coding that is going on behind
+the scenes.
 
-Of course, you can go through the standard Open File dialog to load any
-Grasshopper document, although you can also drag and drop any Grasshopper
-file onto the canvas to load a particular definition.
+The standard New Document and Open Document commands available in the menu bar
+are used to start a blank definition or load an existing grasshopper document
+respectively.  Either option creates a separate instance of a file in memory.
+Once you have at least a grasshopper document open, there is a File Browser
+available which displays a thumbnail-based drop-down list upon clicking the
+name of the active file located in the right-most end of the menu bar. This
+allows quick switching between loaded files which is useful when using copy and
+paste to move items between open definitions. You can also hit Alt+Tab to
+quickly switch between any open Grasshopper documents.
 
-> Grasshopper is a plug-in that works “on-top” of Rhino and as such has its own file types.
-The default file type is a binary data file, saved with an extension of .gh. The other file type is known as a Grasshopper XML file, which uses the extension .ghx. The XML (Extensible Markup Language) file type uses tags to define objects and object attributes (much like an .HTML document) but uses custom tags to define objects and the data within each object. Because XML files are formatted as textdocuments, you could open up any Grasshopper XML file in a text editor like NotePad to see the coding that is going on behind the scenes.
+Grasshopper can respond in several different ways to dragging one or more 
+Grasshopper documents(.gh or .ghx) onto its canvas. The active drop mode can
+easily be checked or switched instantly during a drag-and-drop operation. 
+Merely hover on the top-left canvas corner while dragging the appropriate
+file or files to peel back the canvas and check or switch modes by mouse hover.
+There is no need to click the mouse on an icon to switch modes, just "fly-by",
+so that the drag, the drop and any mode-switches can all be done with one-hand.
+The drop-mode selector includes initialized labels with each icon which also
+provide dynamic (mid-drag) mode switching via the corresponding keyboard tap.
+
+Here are the five modes to choose from for the action you want Grasshopper to
+take in response to dragging-and-dropping appropriate files onto the canvas:
+
+**(O)pen File:** As the name suggests, this file option will simply open any
+definition that you drag-and-drop onto the canvas, as a separate document.
+
+**(I)nsert File:** You can use this option to insert the contents of an existing
+file into the current document as loose components.
+
+**(G)roup File:** This method will insert a file into an existing document, but
+will also group all of the objects together.
+
+**(C)luster File:** Similar to the group function, this method will insert a
+file into an existing document, but will create a cluster object for the
+entire group of objects.
+
+**(E)xamine File:** Allows you to open a file in a locked state, meaning you
+can look around a particular file but you can’t make any changes to the
+definition.
 
 Grasshopper also has an Autosave feature which will be triggered periodically
 based on specific user actions. A list of Autosave preferences can be found
@@ -134,23 +181,35 @@ outline type can be defined by right-clicking on any group object.
 
 ![IMAGE](images/1-1-2/1-1-2_006-grouping1.png)
 >1. A group of components delineated by the Box Outline profile.
-2. Right-click anywhere on the group to edit the name and appearance of the group.
+2. Right-click anywhere on the group to edit the name and appearance of the
+group.
 
 
 ![IMAGE](images/1-1-2/1-1-2_007-grouping2.png)
->You can also define a group using a meta-ball algorithm by using the Blob Outline profile.
+>You can also define a group using a meta-ball algorithm by using the Blob
+Outline profile.
 
 ![IMAGE](images/1-1-2/1-1-2_008-grouping3.png)
->Two groups are nested inside one another. The color (light blue) has been changed on the outer group to help visually identify one group from the other. Groups are drawn “behind” the components within them.
+>Two groups are nested inside one another. The color (light blue) has been
+changed on the outer group to help visually identify one group from the other.
+Groups are drawn “behind” the components within them.
 
 ####1.1.2.6.1 Front-To-Back Ordering
-Although one can (and should) usually arrange components and groups far enough apart that they do not need to overlap, crowding items closer together is manageable using Edit->Arrange from the main menu bar.  You can manipulate the front-to-back order in which overlapped components appear.  The front-to-back order in which overlapped groups appear can also be controlled.
+Although one can (and should) usually arrange components and groups far enough
+apart that they do not need to overlap, crowding items closer together can be
+facilitated using Edit->Arrange from the main menu bar.  You can manipulate the
+front-to-back order in which overlapped components appear.  The front-to-back
+order in which overlapped groups appear can also be controlled.
 
 ![IMAGE](images/1-1-2/1-1-2_008-5depthOrder1.png)
-> A group of related components which could be used to orient a 3D vector is arranged without any overlapping components.
+> A group of related components which could be used to orient a 3-D vector is
+arranged without any overlapping components.
 
 ![IMAGE](images/1-1-2/1-1-2_008-5depthOrder2.png)
-> The same group is arranged with some overlapping components. The Multi-dimensional Slider has been placed in front of the Decompose-Vector component but behind the Number Slider so that all the user-interface functionality is still available.
+> The same group is arranged with some overlapping components. The
+Multi-dimensional Slider has been placed in front of the Decompose-Vector
+component but behind the Number Slider so that all the user-interface
+functionality is still available.
 
 ####1.1.2.7. WIDGETS
 There are a few widgets that are available in Grasshopper that can help you
@@ -181,7 +240,8 @@ components in terms of performance. Note that this widget is turned off by
 default.
 
 ![IMAGE](images/1-1-2/1-1-2_010-profiler.png)
->The Profiler widget gives you visual feedback as to which components in your definition could be causing longer computational times.
+>The Profiler widget gives you visual feedback as to which components in your
+definition could be causing longer computational times.
 
 **The Markov Widget**
 This widget uses Markov chains to ‘predict’ which component you may want to
@@ -207,7 +267,8 @@ search box. Simply type in the name of the component you are looking for and
 you will see a list of parameters or components that match your request.
 
 ![IMAGE](images/1-1-2/1-1-2_011-search.png)
->Double-click anywhere on the canvas to invoke a key word search for a particular component found in the Component Panels.
+>Double-click anywhere on the canvas to invoke a key word search for a
+particular component found in the Component Panels.
 
 ![IMAGE](images/1-1-2/1-1-2_012-search2.png)
 >A search for “divide” lists a variety of components.
@@ -240,10 +301,13 @@ Find dialog box and hovering over an item in the list will turn that particular
 component on the canvas green.
 
 ![IMAGE](images/1-1-2/1-1-2_013-find.png)
->By right-clicking anywhere on the canvas or pressing the F3 key, you can invoke the Find feature. Start by typing in the name of the component that you are looking for.
+>By right-clicking anywhere on the canvas or pressing the F3 key, you can invoke
+the Find feature. Start by typing in the name of the component that you are
+looking for.
 
 ![IMAGE](images/1-1-2/1-1-2_014-find2.png)
->The Find feature can be quite helpful to locate a particular component on the canvas. Right-click anywhere on the canvas to launch the Find dialog box.
+>The Find feature can be quite helpful to locate a particular component on the
+canvas. Right-click anywhere on the canvas to launch the Find dialog box.
 
 ![IMAGE](images/1-1-2/1-1-2_015-find3.png)
 >A small arrow will also be displayed next to each item in the list which points
@@ -280,34 +344,55 @@ View tab on the Main Menu Bar.
 ![IMAGE](images/1-1-2/1-1-2_017-toolbar1.png)
 >1. **Open File:** A shortcut to open a Grasshopper File.
 2.  **Save File:** A shortcut to save the current Grasshopper File.
-3.  **Zoom Defaults**: Default zoom settings that allow you to zoom in or out of your canvas at predefined intervals.
-4. **Zoom Extents:** Zoom to the extents of your definition. Click on the arrow next to the Zoom Extents icon to select one of the sub-menu items to zoom to a particular region within your definition.
-5. **Named Views: **This feature exposes a menu allowing you to store or recall any view area in your definition.
+3.  **Zoom Defaults**: Default zoom settings that allow you to zoom in or out
+ of your canvas at predefined intervals.
+4. **Zoom Extents:** Zoom to the extents of your definition. Click on the arrow
+next to the Zoom Extents icon to select one of the sub-menu items to zoom to a
+particular region within your definition.
+5. **Named Views: **This feature exposes a menu allowing you to store or recall
+any view area in your definition.
 6. **The Sketch Tool:** The sketch tool works similarly to the pencil
 tool set found in Adobe Photoshop with a few added features.
 
 ![IMAGE](images/1-1-2/1-1-2_017-toolbar2.png)
->1. **Preview Settings:** If a Grasshopper component generates some form of geometry, then a preview of this geometry will be visible in the viewport by default. You can disable the preview on a perobject basis by right-clicking each component and de-activating the preview feature, or globally change the preview state by using one of these three buttons.
+>1. **Preview Settings:** If a Grasshopper component generates some form of
+geometry, then a preview of this geometry will be visible in the viewport by
+default. You can disable the preview on a perobject basis by right-clicking
+each component and de-activating the preview feature, or globally change the
+preview state by using one of these three buttons.
 2. Wire-frame preview.
 3. Turn off preview.
 4. Shaded preview (default).
-5. **Preview Selected Objects:** With this button toggled, Grasshopper will only display geometry that is part of selected components, even if those components have a preview=off state.
-6. **Document Preview Settings:** Grasshopper has a default color scheme for selected (semi-transparent green) and unselected (semi-transparent red) geometry. It is possible to override this color scheme with the Document Preview Settings dialog.
-7. **Preview Mesh Quality:** For optimization purposes, these settings allow you to control the quality of the mesh/surface display of the geometry rendered in Rhino. Higher quality settings will cause longer calculation times, whereas lower settings will display less accurate preview geometry. It should be noted that the geometry still maintains a high-degree of resolution when baked into the Rhino document – these settings merely affect the display performance and quality.
+5. **Preview Selected Objects:** With this button toggled, Grasshopper will
+only display geometry that is part of selected components, even if those
+components have a preview=off state.
+6. **Document Preview Settings:** Grasshopper has a default color scheme for
+selected (semi-transparent green) and unselected (semi-transparent red) geometry.
+It is possible to override this color scheme with the Document Preview Settings dialog.
+7. **Preview Mesh Quality:** For optimization purposes, these settings allow
+you to control the quality of the mesh/surface display of the geometry rendered
+in Rhino. Higher quality settings will cause longer calculation times, whereas
+lower settings will display less accurate preview geometry. It should be noted
+that the geometry still maintains a high-degree of resolution when baked into
+the Rhino document – these settings merely affect the display performance and
+quality.
 
 ![IMAGE](images/1-1-2/1-1-2_018-sketch.png)
->The sketch tool allows changes to the line weight, line type, and color. By right-clicking on the selected sketch object you can choose to simplify your line to create a smoother effect. Right-click on your sketch object and select “Load from Rhino”. When prompted, select any 2D shape in your Rhino scene. Once you have selected your referenced shape, hit Enter, and your previous sketch line will be reconfigured to your Rhino reference shape.
+>The sketch tool allows changes to the line weight, line type, and color. By
+right-clicking on the selected sketch object you can choose to simplify your line
+to create a smoother effect. Right-click on your sketch object and select “Load
+from Rhino”. When prompted, select any 2D shape in your Rhino scene. Once you
+have selected your referenced shape, hit Enter, and your previous sketch line
+will be reconfigured to your Rhino reference shape.
 
->Note: Your sketch object may have moved from its original location once you have loaded a shape from Rhino. Grasshopper places your sketch object relative to the origin of the canvas (upper left hand corner) and the world xy plane origin in Rhino.
+>Note: Your sketch object may have moved from its original location once you
+have loaded a shape from Rhino. Grasshopper places your sketch object relative
+to the origin of the canvas (upper left hand corner) and the world xy plane
+origin in Rhino.
 
 ![IMAGE](images/1-1-2/1-1-2_019-preview.png)
->Grasshopper has a default color scheme for selected (semi-transparent green) and unselected (semi-transparent red) geometry. It is possible to override this color scheme with the Document Preview Settings dialog.
-
-
-
-
-
-
-
+>Grasshopper has a default color scheme for selected (semi-transparent green)
+and unselected (semi-transparent red) geometry. It is possible to override this
+color scheme with the Document Preview Settings dialog.
 
 
