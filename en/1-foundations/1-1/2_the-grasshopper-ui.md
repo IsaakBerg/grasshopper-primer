@@ -96,7 +96,7 @@ paste to move items between open definitions. You can also hit Alt+Tab to
 quickly switch between any open Grasshopper documents.
 
 Grasshopper can respond in several different ways to dragging one or more 
-Grasshopper documents(.gh or .ghx) onto its canvas. The active drop mode can
+Grasshopper documents (.gh or .ghx) onto its canvas. The active drop mode can
 easily be checked or switched instantly during a drag-and-drop operation. 
 Merely hover on the top-left canvas corner while dragging the appropriate
 file or files to peel back the canvas and check or switch modes by mouse hover.
