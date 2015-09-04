@@ -138,7 +138,7 @@ any Grasshopper files that were open when Rhino was shut down.
 ##### Autosave only works if the file has already been saved at least once.
 
 ![IMAGE](images/1-1-2/1-1-2_003-autosave.png)
->The drop-mode UI revealed during drag-and-drop of valid files onto the Canvas.
+>Picture of drop-mode selector during a drag of .gh/.ghx files onto the Canvas.
 
 ####1.1.2.4. COMPONENT PALETTES
 This area organizes components into categories and sub-categories. Categories
