@@ -72,17 +72,16 @@ single-screen environments, trying to manipulate its user interface elements
 and the Rhino viewport can get tricky. Fortunately the following elegant
 solution avoids requiring the two interfaces to share the screen.
 
-Grasshopper's Remote Control Panel (RCP) can hover over Rhino or dock into it,
-providing a more visually compact way to control your Grasshopper definition.
+Grasshopper's Remote Control Panel (RCP), like Rhino's own toolbars, can hover
+over Rhino or dock into it, and can be used when Rhino's window has the focus.
 The RCP can be instantiated by activating the toggle under the View menu of the
-Main Menu bar. Initially, the RCP is blank — it doesn’t yet contain any
-Grasshopper user interface element links. To add linked copies of Grasshopper
-UI elements like sliders, toggles, and buttons to the RCP, right-click on the
-element in Grasshopper and click Publish To Remote Panel. Publishing a control
-copies a linked version of it into the RCP which helps since it acts like other
-dockable Rhino toobars, active when the Rhino window has the focus. Multiple
-Grasshopper UI elements can be published to the RCP so they are conveniently
-accessible in a way that maximizes the screen area available for viewing Rhino.
+Main Menu bar in Grasshopper. Initially, the RCP is blank — containing no user
+interface element copies of Grasshopper inputs.  Right-clicking on a UI element
+in Grasshopper and invoking its Publish To Remote Panel command copies a linked
+version of it into the RCP providing a more visually compact way to control it
+from within Rhino. Multiple Grasshopper UI elements can be published to the RCP
+so they are conveniently accessible in a way that maximizes the screen area
+available for seeing the updated preview results in Rhino after each UI change.
 
 >Note: Each linked copy of published UI elements will be labelled in the RCP
 with the original UI element's name. As a best practice, provide all UI input
