@@ -21,7 +21,7 @@ to the image below to identify them according to standard naming conventions.
 >4. Component palettes.
 >5. Canvas toolbar.
 >6. Canvas.
->7. Recently accessed files.*only displayed when no Grasshopper files are open*  
+>7. Recently accessed files. *Only displayed when no Grasshopper files are open.*  
  A grid of rectangular boxes that can be clicked to open recently accessed
  files. The 3x3 menu shows the files most recently accessed (chronologically)
  and will display a red rectangular box if the file cannot be found, such as
