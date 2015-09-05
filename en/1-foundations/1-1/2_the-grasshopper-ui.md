@@ -16,19 +16,20 @@ to the image below to identify them according to standard naming conventions.
 
 ![IMAGE](images/1-1-2/1-1-2_001-grasshopper-ui.png)
 >1. Windows title bar.
-2. Main menu bar.
-3. File browser control.
-4. Component palettes.
-5. Canvas toolbar.
-6. Canvas.
-7. Recently accessed files.  A grid of rectangular boxes providing an interface
- with which to open recently accessed files. The 3x3 menu shows the files most
- recently accessed (chronologically) and will display a red rectangular box if
- the file cannot be found (which can occur if you move a file to a new folder
- or delete it). These are only displayed when no Grasshopper files are open.
- 8. Status bar. This reveals what version of Grasshopper is currently installed
- on your machine. If a newer version is available, a pop-up menu will appear in
- your system tray providing instructions on how to download the latest version.
+>2. Main menu bar.
+>3. File browser control.
+>4. Component palettes.
+>5. Canvas toolbar.
+>6. Canvas.
+>7. Recently accessed files.*only displayed when no Grasshopper files are open*  
+ A grid of rectangular boxes that can be clicked to open recently accessed
+ files. The 3x3 menu shows the files most recently accessed (chronologically)
+ and will display a red rectangular box if the file cannot be found, such as
+ will occur after you move a file to a new folder or delete it).
+>8. Status bar.  
+This reveals what version of Grasshopper is currently installed on your
+machine. *If a newer version is available, a pop-up menu will appear in your
+system tray providing instructions on how to download the latest version.*
 
 
 ####1.1.2.1. GRASSHOPPER'S TITLE BAR
