@@ -1,8 +1,6 @@
 ### 1.1.2. THE GRASSHOPPER UI
 
-#####Grasshopper’s visual “plug-and-play” style gives designers the ability to
- combine creative problem solving with novel rule systems through the use of a
- fluid graphical interface.
+#####Grasshopper’s visual “plug-and-play” style gives designers the ability to combine creative problem solving with novel rule systems through the use of a fluid graphical interface.
 
 Let’s start by exploring Grasshopper’s user interface UI. Grasshopper is a
 visual programming application where you are able to create programs, called
