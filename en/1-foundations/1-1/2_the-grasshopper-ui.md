@@ -55,9 +55,9 @@ GrasshopperUnloadPlugin
 ####1.1.2.2. MAIN MENU BAR
 The menu bar is similar to typical Windows menus, except for the file browser
 control on the right (see next section). The File menu provides typical functions
-(e.g. New File, Open, Save, etc.) in addition to a few utility tools which let you
-export images of your current Grasshopper document (see Export Quick Image
-and Export Hi-Res Image). You can control different aspects of the user interface
+(e.g. New File, Open, Save, etc.) in addition to utility commands which let you
+export images of your current Grasshopper document (see Export Quick Image and
+Export Hi-Res Image). You can control different aspects of the user interface
 using the View and Display menus, while the Solution menu lets you manage
 different attributes about how the solver computes the graph solution.
 
@@ -67,8 +67,8 @@ you to set personal meta-data which will be stored with each Grasshopper
 document while the Display section gives you fine grain control over the look
 and feel of the interface. The Files section lets you specify things like how
 often and where to store automatically saved file (in case the application is
-inadvertently closed or crashes). Finally, the Solver section lets you manage core
-and third-party plug-ins which can extend functionality.
+inadvertently closed or crashes). Finally, the Solver section lets you manage
+core and third-party plug-ins which can extend functionality.
 
 > Note: Be careful when using shortcuts since they are handled by the active
 window which could either be Rhino, the Grasshopper canvas or any other window
@@ -228,12 +228,12 @@ frequently used widgets.
 One useful UI widget which can help you keep your canvas clean is the Align
 widget. You can access the Align widget by selecting multiple components at the
 same time and clicking on one of the options found in the dashed outline that
-surrounds your selected components. You can align left, vertical center, right, or
-top, horizontal center, bottom, or distribute components equally through this
-interface. When first starting out, you may find that these tools sometimes get in
-the way (it is possible to make the mistake of collapsing several components on
-top of each other). However, with a little practice these tools can be invaluable as
-you begin to structure graphs which are readable and comprehensible.
+surrounds your selected components. You can align by left|vertical center|right 
+or top|horizontal center|bottom or distribute selected items equally using this
+interface. When first starting out, you may find that these tools sometimes get
+in the way (perhaps collapsing components on top of each other by mistake) but
+Edit->Undo minimizes the cost of learning to use them. A little practicing with
+these invaluable tools will help you construct a readable, comprehensible file.
 
 ![IMAGE](images/1-1-2/1-1-2_009-align-widget.png)
 >1. Align right.
@@ -375,7 +375,8 @@ only display geometry that is part of selected components, even if those
 components have a preview=off state.
 6. **Document Preview Settings:** Grasshopper has a default color scheme for
 selected (semi-transparent green) and unselected (semi-transparent red) geometry.
-It is possible to override this color scheme with the Document Preview Settings dialog.
+It is possible to override this color scheme with the Document Preview Settings
+dialog.
 7. **Preview Mesh Quality:** For optimization purposes, these settings allow
 you to control the quality of the mesh/surface display of the geometry rendered
 in Rhino. Higher quality settings will cause longer calculation times, whereas
