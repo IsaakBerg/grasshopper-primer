@@ -27,7 +27,8 @@ Document Preview Settings tool on the canvas toolbar.
 ![IMAGE](images/1-1-3/1-1-3_002-viewport-feedback.png)
 >1. Green geometry in the viewport belongs to a component which is currently selected.
 2. Red geometry in the viewport belongs to a component which is currently unselected.
-3. Point geometry is drawn as a cross rather than a rectangle to distinguish it from other Rhino point objects.
+3. Point geometry is drawn as a cross rather than a rectangle to distinguish it
+ from other Rhino point objects.
 4. Blue feedback means you are currently making a selection in the Rhino Viewport.
 
 ####1.1.3.2. LIVE WIRES
