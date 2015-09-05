@@ -9,10 +9,10 @@ window (called the canvas). The outputs to these components are connected to
 the inputs of subsequent components — creating a graph of information which
 can be read from left to right. Let’s get started with the basics.
 
-Assuming you’ve already installed the Grasshopper plugin (see F.0.0), type the
-word “Grasshopper” in the Rhino command prompt to display the Grasshopper
-Editor. The Grasshopper interface contains a number of elements, most of which
-will be very familiar to Rhino users. Let’s look at a few features of the interface.
+Assuming you’ve already downloaded, installed and launched the Grasshopper
+plugin for Rhino3D (1.1.1), observe that the Grasshopper interface contains
+a number of elements, most of which will be very familiar to Rhino users. Let's
+take a tour of these features to establish the naming conventions we will use.
 
 ![IMAGE](images/1-1-2/1-1-2_001-grasshopper-ui.png)
 >1. Windows title bar.
@@ -21,12 +21,12 @@ will be very familiar to Rhino users. Let’s look at a few features of the inte
 4. Component palettes.
 5. Canvas toolbar.
 6. Canvas.
-7. This area, indicated by a grid of rectangular boxes, provides an interface
+7. Recently accessed files.  A grid of rectangular boxes providing an interface
  with which to open recently accessed files. The 3x3 menu shows the files most
  recently accessed (chronologically) and will display a red rectangular box if
  the file cannot be found (which can occur if you move a file to a new folder
- or delete it).
- 8. The status bar tells you what version of Grasshopper is currently installed
+ or delete it). These are only displayed when no Grasshopper files are open.
+ 8. Status bar. This reveals what version of Grasshopper is currently installed
  on your machine. If a newer version is available, a pop-up menu will appear in
  your system tray providing instructions on how to download the latest version.
 
