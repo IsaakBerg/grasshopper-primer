@@ -2,17 +2,17 @@
 
 #####Grasshopper’s visual “plug-and-play” style gives designers the ability to combine creative problem solving with novel rule systems through the use of a fluid graphical interface.
 
-Let’s start by exploring Grasshopper’s user interface UI. Grasshopper is a
-visual programming application where you are able to create programs, called
+Let’s start by exploring Grasshopper’s user interface. Grasshopper is a visual
+programming application where you are able to create programs, called
 definitions or documents, by dragging components onto the main editing
 window (called the canvas). The outputs to these components are connected to
 the inputs of subsequent components — creating a graph of information which
-can be read from left to right. Let’s get started with the basics.
+can be read from left to right.  This section covers all of the basics.
 
-Assuming you’ve already downloaded, installed and launched the Grasshopper
-plugin for Rhino3D (1.1.1), observe that the Grasshopper interface contains
-a number of elements, most of which will be very familiar to Rhino users. Let's
-take a tour of these features to establish the naming conventions we will use.
+If you’ve already downloaded, installed and launched the Grasshopper plug-in
+for Rhino3D (as explained in 1.1.1), observe that the Grasshopper interface has
+a number of elements, most of which will be very familiar to Rhino users. Refer
+to the image below to identify them according to standard naming conventions.
 
 ![IMAGE](images/1-1-2/1-1-2_001-grasshopper-ui.png)
 >1. Windows title bar.
@@ -118,8 +118,8 @@ take in response to dragging-and-dropping appropriate files onto the canvas:
 **(O)pen File:** As the name suggests, this file option will simply open any
 definition that you drag-and-drop onto the canvas, as a separate document.
 
-**(I)nsert File:** You can use this option to insert the contents of an existing
-file into the current document as loose components.
+**(I)nsert File:** You can use this option to insert the contents of an
+existing file into the current document as loose components.
 
 **(G)roup File:** This method will insert a file into an existing document, but
 will also group all of the objects together.
@@ -159,8 +159,8 @@ Since there can be many more components in each sub-category than will fit into
 the palette, a limited number of icons are displayed on each panel. The height
 of the component palette and the width of the Grasshopper window can be
 adjusted to display more or fewer components per sub-category. To see a menu
-of all of the components in a given sub-category, simply click on the black bar at
-the bottom of each sub-category panel. This will open a dropdown menu which
+of all of the components in a given sub-category, simply click on the black bar
+at the bottom of each sub-category panel. This will open a dropdown menu which
 provides access to all components in that sub-category.
 
 
@@ -174,7 +174,7 @@ provides access to all components in that sub-category.
 
 ####1.1.2.5. THE CANVAS
 The canvas is the primary workspace for creating Grasshopper definitions. It is
-here where you interact with the elements of your visual program. You can start
+here where you interact with the pieces of your visual program. You can start
 working in the canvas by placing components and connecting wires.
 
 ####1.1.2.6. GROUPING
@@ -228,7 +228,7 @@ frequently used widgets.
 One useful UI widget which can help you keep your canvas clean is the Align
 widget. You can access the Align widget by selecting multiple components at the
 same time and clicking on one of the options found in the dashed outline that
-surrounds your selected components. You can align by left|vertical center|right 
+surrounds your selected components. You can align by left|vertical center|right
 or top|horizontal center|bottom or distribute selected items equally using this
 interface. When first starting out, you may find that these tools sometimes get
 in the way (perhaps collapsing components on top of each other by mistake) but
