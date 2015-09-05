@@ -1,6 +1,8 @@
 ###1.1.3. TALKING TO RHINO
 
-#####Unlike a Rhino document, a Grasshopper definition does not contain any actual objects or geometry. Instead, a Grasshopper definition represents a set of rules & instructions for how Rhino can automate tasks.
+Unlike a Rhino document, a Grasshopper definition does not contain any actual
+objects or geometry. Instead, a Grasshopper definition represents a set of
+rules and instructions for how Rhino can automate tasks.
 
 ![IMAGE](images/1-1-3/1-1-3_001-talking-to-rhino.png)
 >1. Grasshopper preview geometry.
@@ -19,7 +21,8 @@ can turn the geometry preview on/off by right-clicking on a component and
 selecting the Preview toggle. The geometry in the viewport is color coded to
 provide visual feedback. The image below outlines the default color scheme.
 
->Note: This is the default color scheme, which can be modified using the Document Preview Settings tool on the canvas toolbar.
+>Note: This is the default color scheme, which can be modified using the
+Document Preview Settings tool on the canvas toolbar.
 
 ![IMAGE](images/1-1-3/1-1-3_002-viewport-feedback.png)
 >1. Green geometry in the viewport belongs to a component which is currently selected.
@@ -51,9 +54,10 @@ will no longer be responsive to the changes in your definition.
 
 ![IMAGE](images/1-1-3/1-1-3_005-baking.png)
 >1. Bake by right-clicking a component and selecting Bake.
-2. A dialog will appear that allows you to select onto which Rhino layer the geometry will
-bake.
-3. Grouping your baked geometry is a convenient way to manage the instantiated Rhino geometry, particularly if you are creating many objects with Grasshopper.
+2. A dialog will appear that allows you to select onto which Rhino layer the
+geometry will bake.
+3. Grouping your baked geometry is a convenient way to manage the instantiated
+Rhino geometry, particularly if you are creating many objects with Grasshopper.
 
 
 ####1.1.3.5. UNITS & TOLERANCES
@@ -128,5 +132,6 @@ objects for labeling.
 >Create a template file and save it
 
 ![IMAGE](images/1-1-3/1-1-3_011-templates2.png)
->1. In File/Preferences, load the file you just created under Template File. Your template will now be used each time you create a new file.
+>1. In File/Preferences, load the file you just created under Template File.
+Your template will now be used each time you create a new file.
 
