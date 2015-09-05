@@ -1,6 +1,8 @@
 ### 1.1.2. THE GRASSHOPPER UI
 
-#####Grasshopper’s visual “plug-and-play” style gives designers the ability to combine creative problem solving with novel rule systems through the use of a fluid graphical interface.
+#####Grasshopper’s visual “plug-and-play” style gives designers the ability to
+ combine creative problem solving with novel rule systems through the use of a
+ fluid graphical interface.
 
 Let’s start by exploring Grasshopper’s user interface UI. Grasshopper is a
 visual programming application where you are able to create programs, called
@@ -80,15 +82,16 @@ shortcut command for a window that was not the active one at that moment.
 settings.
 
 ####1.1.2.3. FILE FORMATS, FILE INSERT METHODS AND THE FILE BROWSER CONTROL
-Grasshopper is a plug-in that works “on top” of Rhino and as such has its own
+>Grasshopper is a plug-in that works “on top” of Rhino and as such has its own
 file types. The default file type is a binary data file, saved with an
-extensionof .gh.  The other file type is known as a Grasshopper XML file, which
-uses the extension .ghx. The XML (Extensible Markup Language) file type uses
-tags to define objects and object attributes (much like an .HTML document) but
-uses custom tags to define objects and the data within each object. Because XML
-files are formatted as text documents, you could open up any Grasshopper XML
-file in a text editor like Notepad to see the coding that is going on behind
-the scenes.
+extension of .gh.  The other file type is a Grasshopper XML file, which uses
+the extension .ghx. The XML (Extensible Markup Language) file type uses tags to
+define objects and object attributes (much like an .HTML document) but uses
+custom tags to define objects and the data within each object. Because XML
+files are formatted as text documents, any Grasshopper XML file is readily-
+readable for trouble-shooting or comparison purposes using readily available
+and generic text tools as simple as Notepad or generic tools for XML, rather
+than file editors that can interpret Grasshopper's .gh binary file format.
 
 The standard New Document and Open Document commands available in the menu bar
 are used to start a blank definition or load an existing grasshopper document
@@ -137,10 +140,10 @@ under the File menu on the Main Menu Bar. When the active instance of Rhino is
 closed, a pop-up dialog box will appear asking whether or not you want to save
 any Grasshopper files that were open when Rhino was shut down.
 
-##### Autosave only works if the file has already been saved at least once.
+>Autosave only works if the file has already been saved at least once.
 
 ![IMAGE](images/1-1-2/1-1-2_003-autosave.png)
->Picture of drop-mode selector during a drag of .gh/.ghx files onto the Canvas.
+>Drop-mode selection during a drag of .gh/.ghx files onto the Canvas.
 
 ####1.1.2.4. COMPONENT PALETTES
 This area organizes components into categories and sub-categories. Categories
@@ -335,8 +338,8 @@ or by clicking your middle mouse button. The radial menu will enable different
 tools depending on whether you invoke the menu by clicking directly on top
 of a component, or just anywhere on the canvas. In the image below, you see
 the radial menu has more features available when clicking on top of a selected
-component than when just clicking on the canvas. This menu can
-dramatically increase the speed at which you create Grasshopper documents.
+component than when just clicking on the canvas. This menu can dramatically
+increase the speed at which you create Grasshopper documents.
 
 ![IMAGE](images/1-1-2/1-1-2_016-radial-menu.png)
 >The Radial UI menu allows you to quickly access frequently used menu items.

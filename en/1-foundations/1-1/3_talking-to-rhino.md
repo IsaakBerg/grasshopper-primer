@@ -69,15 +69,16 @@ Properties menu. Select Units to change the units and tolerances.
 >Change the units and tolerances in the Rhino Document Properties menu.
 
 ####1.1.3.6. REMOTE CONTROL PANEL
-Grasshopper is an incredibly powerful and flexible tool which allows you to
-explore design iterations using a rich graphic interface. However, because the
-Grasshopper editor occupies a considerable portion of the screen, especially in
-single-screen environments, trying to manipulate its user interface elements
-and the Rhino viewport can get tricky. Fortunately the following elegant
-solution avoids requiring the two interfaces to share the screen.
+Grasshopper is an incredibly powerful and flexible Rhino plugin which allows
+rapid exploration of design iterations using a graphic interface. However since
+both Rhino and Grasshopper have their own interfaces which each require lots of
+screen pixels to meaningfully use, trying to suitably arrange both Rhino and
+Grasshopper windows can be a challenge, particularly when the pixels available
+are a limited resource. An elegant solution allows Rhino's interface to keep
+the focus while still letting the user change Grasshopper parameters as needed.
 
 Grasshopper's Remote Control Panel (RCP), like Rhino's own toolbars, can hover
-over Rhino or dock into it, and can be used when Rhino's window has the focus.
+over Rhino or dock into it, allowing Rhino viewports to use most of the screen.
 The RCP can be instantiated by activating the toggle under the View menu of the
 Main Menu bar in Grasshopper. Initially, the RCP is blank — containing no user
 interface element copies of Grasshopper inputs.  Right-clicking on a UI element
@@ -97,10 +98,11 @@ will make both Grasshopper and RCP interfaces easier to use.
 > In order to get a UI element (eg. slider, toggle, button, etc.) to show up in
 the Remote Control Panel, we have to first publish it.
 
-To help users understand your RCP user-interface, arrange elements in the RCP
-into groups that you can label and color. Clicking the green pencil in the
-upper right hand corner of the RCP toggles it between Working Mode and Editing
-Mode. To delete UI elements, simply drag them past the edge of the RCP.
+To help users understand your RCP, make sure it is well-organized. Click the
+green pencil in the RCP's upper right corner to toggle the RCP into its editing
+mode. Arrange its UI elements by groups and assign groups labels and colors. To
+delete unnecessary UI elements, simply drag them past the edge of the RCP.
+Afterwards, toggle the RCP back into working mode to resume normal functions.
 
 >_The Remote Control Panel has two modes: Edit Mode (left) which allows you to
 reorganize the look and feel of the RCP, and Working Mode where you can modify
