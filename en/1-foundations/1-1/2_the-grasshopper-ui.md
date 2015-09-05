@@ -366,9 +366,9 @@ geometry, then a preview of this geometry will be visible in the viewport by
 default. You can disable the preview on a perobject basis by right-clicking
 each component and de-activating the preview feature, or globally change the
 preview state by using one of these three buttons.
-2. Wire-frame preview.
-3. Turn off preview.
-4. Shaded preview (default).
+2. **Wire-frame preview**
+3. **Turn off preview**
+4. **Shaded preview** (default)
 5. **Preview Selected Objects:** With this button toggled, Grasshopper will
 only display geometry that is part of selected components, even if those
 components have a preview=off state.
