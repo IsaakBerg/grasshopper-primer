@@ -356,7 +356,7 @@ View tab on the Main Menu Bar.
 4. **Zoom Extents:** Zoom to the extents of your definition. Click on the arrow
 next to the Zoom Extents icon to select one of the sub-menu items to zoom to a
 particular region within your definition.
-5. **Named Views: **This feature exposes a menu allowing you to store or recall
+5. **Named Views:** This feature exposes a menu allowing you to store or recall
 any view area in your definition.
 6. **The Sketch Tool:** The sketch tool works similarly to the pencil
 tool set found in Adobe Photoshop with a few added features.
