@@ -7,7 +7,8 @@ programming application where you are able to create programs, called
 definitions or documents, by dragging components onto the main editing
 window (called the canvas). The outputs to these components are connected to
 the inputs of subsequent components — creating a graph of information which
-can be read from left to right.  This section covers all of the basics.
+can be read from left to right. Reading this section will orient you to all of
+the basics of the user interface to this extremely powerful and useful tool.
 
 If you’ve already downloaded, installed and launched the Grasshopper plug-in
 for Rhino3D (as explained in 1.1.1), observe that the Grasshopper interface has
@@ -113,24 +114,24 @@ on the best way to mode-switch: tap the initial of the target mode on the
 keyboard, mid-drag.
 
 Here are the five modes to choose from for the action you want Grasshopper to
-take in response to dragging-and-dropping appropriate files onto the canvas:
+take in response to dragging-and-dropping an appropriate file (or files) onto
+the canvas:
 
-**(O)pen File:** As the name suggests, this file option will simply open any
-definition that you drag-and-drop onto the canvas, as a separate document.
+**(O)pen File:** As the name suggests, this file option will simply open the
+definitions that you drag-and-drop onto the canvas, as separate documents.
 
-**(I)nsert File:** You can use this option to insert the contents of an
-existing file into the current document as loose components.
+**(I)nsert File:** Use this mode to insert the contents of a single definition
+into the current document as loose components, but you should probably
+not use this mode to drop multiple complicated files (it makes a big mess).
 
-**(G)roup File:** This method will insert a file into an existing document, but
-will also group all of the objects together.
+**(G)roup File:** This method will also insert dropped file into the active
+document except the contents of each file will be inserted as a separate group.
 
-**(C)luster File:** Similar to the group function, this method will insert a
-file into an existing document, but will create a cluster object for the
-entire group of objects.
+**(C)luster File:** Places a cluster (*or clusters on top of one another*)
+representing the dropped file or files onto the canvas of the active document.
 
-**(E)xamine File:** Allows you to open a file in a locked state, meaning you
-can look around a particular file but you can’t make any changes to the
-definition.
+**(E)xamine File:** Allows you to open the dropped files in a locked state, so
+you can examine them without fears about changing their definitions by mistake.
 
 Grasshopper also has an Autosave feature which will be triggered periodically
 based on specific user actions. A list of Autosave preferences can be found
