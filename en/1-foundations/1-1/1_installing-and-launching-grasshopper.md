@@ -40,8 +40,8 @@ do not overlap and Grasshopper does not obstruct the Rhino viewports. *If your
 setup does not allow this, the Remote Control Panel may help (see 1.1.3.6).*
 
 ![IMAGE](images/1-1-1/1-1-1_003-launching-a.png)
->This splash screen appears after typing “*Grasshopper*” in the Rhino command
-line while Grasshopper prepares to open its UI.
+>This splash screen appears while Grasshopper initializes its UI after the
+“*Grasshopper*” command was invoked in the Rhino command line interface.
 
 
 ![IMAGE](images/1-1-1/1-1-1_004-launching-b.png)
