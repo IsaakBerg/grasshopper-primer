@@ -49,7 +49,7 @@ line while Grasshopper prepares to open its UI.
 ![IMAGE](images/1-1-1/1-1-1_005-launching-c.png)
 >Split the screen so that Grasshopper does not obstruct the Rhino Viewports.
 You can do this by dragging each window to opposite sides of the screen, or if
-on Windows 7 or higher (*or with Aerosnap installed*) by holding the Windows key
+on Windows 7 or higher (*or with Aerosnap running*) by holding the Windows key
 and pressing the left or right arrows.
 
 
