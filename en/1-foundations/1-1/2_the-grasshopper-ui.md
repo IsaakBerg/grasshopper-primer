@@ -89,7 +89,7 @@ shortcut command for a window that was not the active one at that moment.
 >The Preferences dialog allows you to set many of Grasshopper’s application
 settings.
 
-####1.1.2.3. FILE FORMATS, FILE INSERT METHODS AND THE FILE BROWSER CONTROL
+####1.1.2.3. FILE FORMATS, FILE INSERT METHODS AND FAST FILE SWITCH METHODS
 >Grasshopper is a plug-in that works “on top” of Rhino and as such has its own
 file types. The default file type is a binary data file, saved with an
 extension of .gh.  The other file type is a Grasshopper XML file, which uses
