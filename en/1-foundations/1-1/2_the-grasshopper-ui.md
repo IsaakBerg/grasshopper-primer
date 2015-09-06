@@ -4,7 +4,7 @@
 
 Let’s start by exploring Grasshopper’s user interface. Grasshopper is a visual
 programming application where you are able to create programs, called
-definitions or documents, by dragging components onto the main editing
+definitions or documents, by dragging components onto the main portion of the
 window (called the canvas). The outputs to these components are connected to
 the inputs of subsequent components — creating a graph of information which
 can be read from left to right. Reading this section will orient you to all of
@@ -13,7 +13,7 @@ the basics of the user interface to this extremely powerful and useful tool.
 If you’ve already downloaded, installed and launched the Grasshopper plug-in
 for Rhino3D (as explained in 1.1.1), observe that the Grasshopper interface has
 a number of elements, most of which will be very familiar to Rhino users. Refer
-to the image below to identify them according to standard naming conventions.
+to the image below to identify them and see what to call them.
 
 ![IMAGE](images/1-1-2/1-1-2_001-grasshopper-ui.png)
 >1. Windows title bar.
@@ -27,9 +27,11 @@ to the image below to identify them according to standard naming conventions.
   most recently accessed (chronologically) and will display a red rectangular box if the file cannot be found;  
   this occurs after you have moved a file to a new folder or deleted it.
 >8. Status bar.  
-This reveals what version of Grasshopper is currently installed on your
-machine. *If a newer version is available, a pop-up menu will appear in your
-system tray providing instructions on how to download the latest version.*
+At its right-most end this reports which version of Grasshopper is currently
+installed on your machine. *If a newer version is available, a pop-up menu will
+appear in your system tray providing instructions on how to download the latest
+version.* At its left-most end this also occasionally reports status messages,
+such as how long ago an auto-save was most recently completed.
 
 
 ####1.1.2.1. GRASSHOPPER'S TITLE BAR
