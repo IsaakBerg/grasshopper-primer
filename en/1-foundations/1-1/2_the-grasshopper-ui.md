@@ -22,9 +22,12 @@ to the image below to identify them and see what to call them.
 >4. Component palettes.
 >5. Canvas toolbar.
 >6. Canvas.
->7. Recently accessed files. *Only displayed when no Grasshopper files are open.*  
-  A grid of rectangular boxes that can be clicked to open recently accessed files. The 3x3 menu shows the files  
-  most recently accessed (chronologically) and will display a red rectangular box if the file cannot be found;  
+>7. Recently accessed files. *These tiles are displayed only when no
+Grasshopper files are open.*  
+  A grid of rectangular tiles that can be clicked to open recently accessed
+  files. The 3x3 menu shows the files  
+  most recently accessed (chronologically) and will display a red tile if the
+  file cannot be found;  
   this occurs after you have moved a file to a new folder or deleted it.
 >8. Status bar.  
 At its right-most end this reports which version of Grasshopper is currently
