@@ -118,7 +118,8 @@ take in response to dragging-and-dropping an appropriate file (or files) onto
 the canvas:
 
 **(O)pen File:** As the name suggests, this file option will simply open the
-definitions that you drag-and-drop onto the canvas, as separate documents.
+definitions that you drag-and-drop onto the canvas, as separate thumbnails in
+the File Browser.
 
 **(I)nsert File:** Use this mode to insert the contents of a single definition
 into the current document as loose components, but you should probably
@@ -130,8 +131,10 @@ document except the contents of each file will be inserted as a separate group.
 **(C)luster File:** Places a cluster (*or clusters on top of one another*)
 representing the dropped file or files onto the canvas of the active document.
 
-**(E)xamine File:** Allows you to open the dropped files in a locked state, so
-you can examine them without fears about changing their definitions by mistake.
+**(E)xamine File:** Opens each of the dropped files in a special Grasshopper
+file browser so you can examine every detail of the binary contents of each
+file, including what version of Grasshopper it came from. This is useful tool
+intended primarily for trouble-shooting.
 
 Grasshopper also has an Autosave feature which will be triggered periodically
 based on specific user actions. A list of Autosave preferences can be found
@@ -166,11 +169,11 @@ provides access to all components in that sub-category.
 
 
 ![IMAGE](images/1-1-2/1-1-2_005-subcategories.png)
->1. Catgory tab
-2. Sub-category panel.
-3. Click the black bar to open the sub-category panel menu.
-3. Hover your mouse over a component for a short description.
-4. Drop-down menu.
+>1. Category tabs.
+>2. Sub-category panel.
+>3. Sub-category drop-down menu bar *(clicking opens the drop-down menu)*.
+>4. Short component description *(displayed while hovering your mouse over)*.
+>5. Drop-down menu.
 
 
 ####1.1.2.5. THE CANVAS
@@ -231,15 +234,22 @@ widget. You can access the Align widget by selecting multiple components at the
 same time and clicking on one of the options found in the dashed outline that
 surrounds your selected components. You can align by left|vertical center|right
 or top|horizontal center|bottom or distribute selected items equally using this
-interface. When first starting out, you may find that these tools sometimes get
-in the way (perhaps collapsing components on top of each other by mistake) but
-Edit->Undo minimizes the cost of learning to use them. A little practicing with
-these invaluable tools will help you construct a readable, comprehensible file.
+interface.
 
 ![IMAGE](images/1-1-2/1-1-2_009-align-widget.png)
 >1. Align right.
 2. Distribute vertically.
 
+
+Well-constructed and interesting Grasshopper files are often read, applied, and
+studied over many years and by many users, so it is worthwhile to expend effort
+to make them readable and comprehensible during creation and editing processes.
+Choosing meaningful component names and input names, providing helpful comment
+Panels, neatly aligning definition items and labelling colorized groups are
+invaluable practices to that end. When first starting out, you may find these
+tools and widgets sometimes get in the way but persevere. The Edit->Undo
+command minimizes the risk and cost of learning to use them by trial and error,
+and everyone who sees good work (*including your future self*) appreciates it.
 
 **The Profiler Widget**
 The profiler lists worst-case runtimes for parameters and components,
@@ -365,14 +375,14 @@ tool set found in Adobe Photoshop with a few added features.
 ![IMAGE](images/1-1-2/1-1-2_017-toolbar2.png)
 >1. **Preview Settings:** If a Grasshopper component generates some form of
 geometry, then a preview of this geometry will be visible in the viewport by
-default. You can disable the preview on a perobject basis by right-clicking
+default. You can disable the preview on a per object basis by right-clicking
 each component and de-activating the preview feature, or globally change the
 preview state by using one of these three buttons.
 2. **Wire-frame preview**
 3. **Turn off preview**
 4. **Shaded preview** (default)
 5. **Preview Selected Objects:** With this button toggled, Grasshopper will
-only display geometry that is part of selected components, even if those
+display all geometry that is part of any selected components, even if those
 components have a preview=off state.
 6. **Document Preview Settings:** Grasshopper has a default color scheme for
 selected (semi-transparent green) and unselected (semi-transparent red) geometry.
