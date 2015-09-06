@@ -109,8 +109,8 @@ Browser which displays a thumbnail-based drop-down list availble upon clicking
 the name of the active file located in the right-most end of the menubar. Click
 on thumbnails to switch quickly between loaded files, particularly useful when
 copy and paste to transfer parts of node diagrams between open definitions. You
-can also hit *Ctrl+Tab* to open and cycle through similar click-to-open
-thumbnails representing all currently open Grasshopper documents.
+can also hit *Ctrl+Tab* to display and cycle the selection through similar
+click-to-open thumbnails representing all currently open Grasshopper documents.
 
 Grasshopper can respond in several different ways to dragging one or more 
 Grasshopper documents (.gh or .ghx) onto its canvas. The active drop mode can
