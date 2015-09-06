@@ -18,32 +18,38 @@ to your computer’s hard drive) and save the executable file to that address.
 
 
 ####1.1.1.2. INSTALLING
-Select Run from the download dialog box follow the installer instructions.
-(note: you must have Rhino 5 already installed on your computer for the plug-in
-to install properly).
+Select Run from the download dialog box and follow the installer instructions.
+(*Note: you must have Rhino 5 already installed on your computer for the plug-in
+to install properly*).
 
 ![IMAGE](images/1-1-1/1-1-1_002-installing.png)
 >Follow the steps in the Installation wizard.
 
 ####1.1.1.3. LAUNCHING
-To launch Grasshopper, type Grasshopper into the Rhino Command line. When you
-launch Grasshopper, the first thing you will see is a new window floating in
-front of Rhino. Within this window you can create node-based programs to
-automate various types of functionality in Rhino. Best practice is to arrange
-the windows so that they do not overlap and Grasshopper does not obstruct the
-Rhino viewports.
+To launch Grasshopper, type Grasshopper into the Rhino Command line. If
+Grasshopper is installed correctly, the first thing you will see is its splash
+screen showing a progress bar while it finishes loading. Once Grasshopper
+launches, the next thing you will see after the splash screen disappears*) is a
+new window floating in front of Rhino. This window is Grasshopper's User
+Interface (UI) within which you can create node-based programs to automate
+various types of functionality in Rhino. Best practice (*if you have a large
+enough screen or more than one screen*) is to arrange the windows so that they
+do not overlap and Grasshopper does not obstruct the Rhino viewports. *If your
+setup does not allow this, the Remote Control Panel may help (see 1.1.3.6).*
 
 ![IMAGE](images/1-1-1/1-1-1_003-launching-a.png)
->Type “Grasshopper” into the Rhino command line to launch the Grasshopper plugin.
+>This splash screen appears after typing “Grasshopper” in the Rhino command
+line while Grasshopper prepares to open its UI.
 
 
 ![IMAGE](images/1-1-1/1-1-1_004-launching-b.png)
 >1. The Grasshopper window floats on top of the Rhino viewports.
->2. Grasshopper displays the version number at the bottom of the window.
+>2. Grasshopper displays its version number in the bottom right corner of its window.
 
 ![IMAGE](images/1-1-1/1-1-1_005-launching-c.png)
 >Split the screen so that Grasshopper does not obstruct the Rhino Viewports.
-You can do this by dragging each window to opposite sides of the screen, or by
-holding the Windows key and pressing the left or right arrows.
+You can do this by dragging each window to opposite sides of the screen, or if
+on Windows 7 or higher (*or with Aerosnap installed*) by holding the Windows key
+and pressing the left or right arrows.
 
 
