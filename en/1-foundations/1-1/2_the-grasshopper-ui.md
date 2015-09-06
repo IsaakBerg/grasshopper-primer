@@ -131,7 +131,7 @@ The drop-mode selector also shows keys with each mode's initial, a strong hint
 about an alternate mode-switch method: tapping the initial of the target mode
 on the keyboard, mid-drag.
 
-![IMAGE](images/1-1-2/1-1-2_003-autosave.png)
+![IMAGE](images/1-1-2/1-1-2_003-DragDropModeSwitching.png)
 >Drop-mode selection during a drag of .gh/.ghx files onto the Canvas.
 
 Here are details on the five modes to choose from for the action you want
