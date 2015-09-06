@@ -75,8 +75,8 @@ rapid exploration of design iterations using a graphic interface. However since
 both Rhino and Grasshopper have their own interfaces which each require lots of
 screen pixels to meaningfully use, trying to suitably arrange both Rhino and
 Grasshopper windows can be a challenge, particularly when the pixels available
-are a limited resource. An elegant solution allows Rhino's interface to keep
-the focus while still letting the user change Grasshopper parameters as needed.
+are a scarce resource. An elegant solution allows Rhino's interface to keep the
+focus and yet lets the user adjust key Grasshopper parameters whenever needed.
 
 Grasshopper's Remote Control Panel (RCP), like Rhino's own toolbars, can hover
 over Rhino or dock into it, allowing Rhino viewports to use most of the screen.
