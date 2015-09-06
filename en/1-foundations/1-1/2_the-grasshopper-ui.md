@@ -112,6 +112,14 @@ copy and paste to transfer parts of node diagrams between open definitions. You
 can also hit *Ctrl+Tab* to display and cycle the selection through similar
 click-to-open thumbnails representing all currently open Grasshopper documents.
 
+![IMAGE](images/1-1-2/1-1-2_002-4ThumbnailBasedDropDown.png)
+>Clicking the filename at the right-end of the menu-bar drops-down a scrollable
+list of all open documents.
+
+![IMAGE](images/1-1-2/1-1-2_002-5CtrlTabThumbnailTiles.png)
+>*Ctrl+Tab* displays and cycles through a thumbnail based display of all open documents.
+
+
 Grasshopper can respond in several different ways to dragging one or more 
 Grasshopper documents (.gh or .ghx) onto its canvas. The active drop mode can
 easily be checked or switched instantly during a drag-and-drop operation. 
@@ -123,9 +131,12 @@ The drop-mode selector also shows keys with each mode's initial, a strong hint
 about an alternate mode-switch method: tapping the initial of the target mode
 on the keyboard, mid-drag.
 
-Here are the five modes to choose from for the action you want Grasshopper to
-take in response to dragging-and-dropping an appropriate file (or files) onto
-the canvas:
+![IMAGE](images/1-1-2/1-1-2_003-autosave.png)
+>Drop-mode selection during a drag of .gh/.ghx files onto the Canvas.
+
+Here are details on the five modes to choose from for the action you want
+Grasshopper to take in response to dragging-and-dropping an appropriate file
+(or files) onto the canvas:
 
 **(O)pen File:** As the name suggests, this file option will simply open the
 definitions that you drag-and-drop onto the canvas, as separate thumbnails in
@@ -142,9 +153,10 @@ document except the contents of each file will be inserted as a separate group.
 representing the dropped file or files onto the canvas of the active document.
 
 **(E)xamine File:** Opens each of the dropped files in a special Grasshopper
-file browser so you can examine every detail of the binary contents of each
-file, including what version of Grasshopper it came from. This is useful tool
-intended primarily for trouble-shooting.
+file browser so you can examine the information otherwise trapped in the binary
+code contents of each file, such as who authored it and the date and active
+version of Grasshopper used when it was saved. This tool is intended primarily
+for trouble-shooting by developers.
 
 Grasshopper also has an *Autosave* feature which will be triggered periodically
 based on specific user actions. A list of *Autosave* triggers can be found
@@ -154,9 +166,6 @@ Rhino is closed, a pop-up dialog box will appear offering a last chance to save
 any modified Grasshopper files that were open when Rhino was shut down.
 
 >Autosave only works if the file has already been saved at least once.
-
-![IMAGE](images/1-1-2/1-1-2_003-autosave.png)
->Drop-mode selection during a drag of .gh/.ghx files onto the Canvas.
 
 ####1.1.2.4. COMPONENT PALETTES
 This area organizes components into categories and sub-categories. Categories
