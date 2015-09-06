@@ -43,34 +43,38 @@ minimizes Grasshopper without moving it to the bottom of the screen or behind
 other windows. Note that if you instead close the editor, any of the geometry
 preview visible in the Rhino viewport will disappear and the editor will be
 hidden but files won’t yet be closed and unsaved work retains intact in memory.
-If you merely re-run the “Grasshopper” command in the Rhino dialog box, the
-window will come back in the same state with the same files loaded. This is the
-persistent nature of the Grasshopper plugin. Once it is launched from the
+Merely re-invoking the *Grasshopper* command in the Rhino command-line brings
+back the Grasshopper in the same state with the same files loaded (\*). This is
+the persistent nature of the Grasshopper plugin. Once it is launched from the
 command prompt, it will stay active in memory until that instance of Rhino is
-closed or the user forces it to exit.
+closed or the user forces it to exit (\*\*).
+>\*You might not notice Grasshopper's interface come back if it was minimized
+and then closed, so check everywhere on your screen for a small title bar
+labelled *Grasshopper*.
 
->There is a command available within Rhino which will force Grasshopper to quit
-and release its memory without closing Rhino.  One should use it only if they
-understand that all unsaved edits in Grasshopper will be lost. The command is:
-GrasshopperUnloadPlugin
+>\*\* There is a command available within Rhino which will force Grasshopper to
+quit and release its memory without closing Rhino.  One should use it only if
+they understand that all unsaved edits in Grasshopper will be lost. The command
+is: *GrasshopperUnloadPlugin*
 
 
 ####1.1.2.2. MAIN MENU BAR
 The menu bar is similar to typical Windows menus, except for the file browser
-control on the right (see next section). The File menu provides typical functions
-(e.g. New File, Open, Save, etc.) in addition to utility commands which let you
-export images of your current Grasshopper document (see Export Quick Image and
-Export Hi-Res Image). You can control different aspects of the user interface
-using the View and Display menus, while the Solution menu lets you manage
-different attributes about how the solver computes the graph solution.
+control on the right (see next section). The *File* menu provides typical
+functions (e.g. *New Document*, *Open Document*, *Save Document*, etc.) in
+addition to utility commands which let you export images of your current
+Grasshopper document (see *Export Quick Image* and *Export Hi-Res Image*). You
+can control different aspects of the user interface using the *View* and
+*Display* menus, while the *Solution* menu lets you manage different attributes
+about how the solver computes the graph solution.
 
 It is worth noting that many application settings can be controlled through the
-Preferences dialog box found under the File menu. The Author section allows
+*Preferences* dialog box found under the *File* menu. The *Author* section allows
 you to set personal meta-data which will be stored with each Grasshopper
-document while the Display section gives you fine grain control over the look
-and feel of the interface. The Files section lets you specify things like how
+document while the *Display* section gives you fine grain control over the look
+and feel of the interface. The *Files* section lets you specify things like how
 often and where to store automatically saved file (in case the application is
-inadvertently closed or crashes). Finally, the Solver section lets you manage
+inadvertently closed or crashes). Finally, the *Solver* section lets you manage
 core and third-party plug-ins which can extend functionality.
 
 > Note: Be careful when using shortcuts since they are handled by the active
@@ -94,26 +98,27 @@ readable for trouble-shooting or comparison purposes using readily available
 and generic text tools as simple as Notepad or generic tools for XML, rather
 than file editors that can interpret Grasshopper's .gh binary file format.
 
-The standard New Document and Open Document commands available in the menu bar
-are used to start a blank definition or load an existing grasshopper document
-respectively.  Either option creates a separate instance of a file in memory.
-Once you have at least a grasshopper document open, there is a File Browser
-available which displays a thumbnail-based drop-down list upon clicking the
-name of the active file located in the right-most end of the menu bar. This
-allows quick switching between loaded files which is useful when using copy and
-paste to move items between open definitions. You can also hit Alt+Tab to
-quickly switch between any open Grasshopper documents.
+The standard *New Document* and *Open Document* commands available in the menu
+bar are used to start a blank definition or load an existing grasshopper
+document respectively.  Either option creates a separate instance of a file in
+memory. Once you have at least one grasshopper document open, there is a File
+Browser which displays a thumbnail-based drop-down list availble upon clicking
+the name of the active file located in the right-most end of the menubar. Click
+on thumbnails to switch quickly between loaded files, particularly useful when
+copy and paste to transfer parts of node diagrams between open definitions. You
+can also hit *Ctrl+Tab* to cycle through a list of currently open Grasshopper
+documents.
 
 Grasshopper can respond in several different ways to dragging one or more 
 Grasshopper documents (.gh or .ghx) onto its canvas. The active drop mode can
 easily be checked or switched instantly during a drag-and-drop operation. 
 Merely hover on the top-left canvas corner while dragging the appropriate
 file or files to peel back the canvas and check or switch modes by mouse hover.
-There is no need to click the mouse on an icon to switch modes, just "fly-by".
+There is no need to click the mouse on an icon to switch modes, just fly over.
 This facilitates simple last-minute drop-mode changes during the drag and drop.
 The drop-mode selector also shows keys with each mode's initial, a strong hint
-on the best way to mode-switch: tap the initial of the target mode on the
-keyboard, mid-drag.
+about an alternate mode-switch method: tapping the initial of the target mode
+on the keyboard, mid-drag.
 
 Here are the five modes to choose from for the action you want Grasshopper to
 take in response to dragging-and-dropping an appropriate file (or files) onto
@@ -138,11 +143,12 @@ file browser so you can examine every detail of the binary contents of each
 file, including what version of Grasshopper it came from. This is useful tool
 intended primarily for trouble-shooting.
 
-Grasshopper also has an Autosave feature which will be triggered periodically
-based on specific user actions. A list of Autosave preferences can be found
-under the File menu on the Main Menu Bar. When the active instance of Rhino is
-closed, a pop-up dialog box will appear asking whether or not you want to save
-any Grasshopper files that were open when Rhino was shut down.
+Grasshopper also has an *Autosave* feature which will be triggered periodically
+based on specific user actions. A list of *Autosave* triggers can be found
+on the *Files* tab of the *Setting* dialog that opens after clicking
+*Preferences* on the *File* menu. In any case, when the active instance of
+Rhino is closed, a pop-up dialog box will appear offering a last chance to save
+any modified Grasshopper files that were open when Rhino was shut down.
 
 >Autosave only works if the file has already been saved at least once.
 
@@ -359,7 +365,7 @@ increase the speed at which you create Grasshopper documents.
 The canvas toolbar provides quick access to a number of frequently used
 Grasshopper features. All of the tools are available through the menu as well,
 and you can hide the toolbar if you like. The toolbar can be re-enabled from the
-View tab on the Main Menu Bar.
+*View* tab on the Main Menu Bar.
 
 ![IMAGE](images/1-1-2/1-1-2_017-toolbar1.png)
 >1. **Open File:** A shortcut to open a Grasshopper File.
@@ -387,9 +393,9 @@ preview state by using one of these three buttons.
 display all geometry that is part of any selected components, even if those
 components have a preview=off state.
 6. **Document Preview Settings:** Grasshopper has a default color scheme for
-selected (semi-transparent green) and unselected (semi-transparent red) geometry.
-It is possible to override this color scheme with the Document Preview Settings
-dialog.
+how selected (semi-transparent green) and unselected (semi-transparent red)
+geometry appears in Rhino. It is possible to override this color scheme with
+the Document Preview Settings dialog.
 7. **Preview Mesh Quality:** For optimization purposes, these settings allow
 you to control the quality of the mesh/surface display of the geometry rendered
 in Rhino. Higher quality settings will cause longer calculation times, whereas
@@ -401,8 +407,8 @@ quality.
 ![IMAGE](images/1-1-2/1-1-2_018-sketch.png)
 >The sketch tool allows changes to the line weight, line type, and color. By
 right-clicking on the selected sketch object you can choose to simplify your line
-to create a smoother effect. Right-click on your sketch object and select “Load
-from Rhino”. When prompted, select any 2D shape in your Rhino scene. Once you
+to create a smoother effect. Right-click on your sketch object and select *Load
+from Rhino*. When prompted, select any 2D shape in your Rhino scene. Once you
 have selected your referenced shape, hit Enter, and your previous sketch line
 will be reconfigured to your Rhino reference shape.
 
@@ -412,8 +418,9 @@ to the origin of the canvas (upper left hand corner) and the world xy plane
 origin in Rhino.
 
 ![IMAGE](images/1-1-2/1-1-2_019-preview.png)
->Grasshopper has a default color scheme for selected (semi-transparent green)
-and unselected (semi-transparent red) geometry. It is possible to override this
-color scheme with the Document Preview Settings dialog.
+>Grasshopper has a default color scheme for displaying selected
+(semi-transparent green) and unselected (semi-transparent red) geometry in
+Rhino. It is possible to override this color scheme with the Document Preview
+Settings dialog.
 
 
