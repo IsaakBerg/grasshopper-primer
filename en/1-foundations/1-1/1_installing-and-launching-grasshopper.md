@@ -29,7 +29,7 @@ to install properly*).
 To launch Grasshopper, type Grasshopper into the Rhino Command line. If
 Grasshopper is installed correctly, the first thing you will see is its splash
 screen showing a progress bar while it finishes loading. Once Grasshopper
-launches, the next thing you will see after the splash screen disappears*) is a
+launches, the next thing you will see (*after the splash screen disappears*) is a
 new window floating in front of Rhino. This window is Grasshopper's User
 Interface (UI) within which you can create node-based programs to automate
 various types of functionality in Rhino. Best practice (*if you have a large
