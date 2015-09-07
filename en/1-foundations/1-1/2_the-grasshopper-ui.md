@@ -153,10 +153,12 @@ document except the contents of each file will be inserted as a separate group.
 representing the dropped file or files onto the canvas of the active document.
 
 **(E)xamine File:** Opens each of the dropped files in a special Grasshopper
-file browser so you can examine the information otherwise trapped in the binary
-code contents of each file, such as who authored it and the date and active
-version of Grasshopper used when it was saved. This tool is intended primarily
-for trouble-shooting by developers.
+file-format aware tree control which lets you expand or collapse various data
+branches in the file to examine the raw contents of each file. This utility is
+intended primarily for trouble-shooting or software development purposes.
+
+![IMAGE](images/1-1-2/1-1-2_003-5GrasshopperRawDataFileBrowser.png)
+>E-mode dropping launches a detailed display of the data in the dropped files
 
 Grasshopper also has an *Autosave* feature which will be triggered periodically
 based on specific user actions. A list of *Autosave* triggers can be found
