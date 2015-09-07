@@ -73,6 +73,8 @@ As you begin first exploring Grasshopper or further building your skills, you ha
 joined the global Grasshopper community, one that is full of active members
 from a wide variety of fields, with diverse experience levels. The Grasshopper website offers a forum for posing questions, sharing findings, and gaining knowledge. This is a community that we have held dear as we've written this primer and watched Grasshopper develop over the years. Welcome!
 
-Rhino3D.com
-Grasshopper3D.com
+####Links
+____
+[Rhino3D.com](http://www.Rhino3D.com)  
+[Grasshopper3D.com](http://www.Grasshopper3D.com)
 
