@@ -69,10 +69,9 @@ Rhino3D.
 operation in Grasshopper would be to try to manually and incrementally
 create an algorithm using Rhino commands.
 
-As you begin first exploring Grasshopper or further building your skills, you have
-joined the global Grasshopper community, one that is full of active members
-from a wide variety of fields, with diverse experience levels. The Grasshopper website offers a forum for posing questions, sharing findings, and gaining knowledge. This is a community that we have held dear as we've written this primer and watched Grasshopper develop over the years. Welcome!
+By learning about Grasshopper, you became a member of the global Grasshopper community. Grasshopper3D.com hosts a forum for this community to pose questions, share findings, and gain knowledge. Our community is full of active members from a wide variety of fields, with diverse experience levels. It is a community we cherish as Grasshopper continues to flourish and develop over the years. Welcome to the community!
 
-Rhino3D.com
-Grasshopper3D.com
-
+__Links__
+----------
+[Rhino3D.com](http://Rhino3D.com/)  
+[Grasshopper3D.com](http://Grasshopper3D.com/)
