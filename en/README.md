@@ -4,17 +4,17 @@
 
 ![Primer Release Cover](0-about/images/GHP3_5Pages.png)
 
-> Grasshopper is a graphical algorithm editor which integrates into Rhino’s 3-D modeling tools.  It allows designers to build form generators from the simple to the awe-inspiring.
+> Grasshopper is a graphical algorithm editor which integrates into Rhino’s 3-D modeling tools.  It allows designers to build dynamic form generators from the simple to the awe-inspiring.
 
 ###WELCOME
-You have just opened the third edition of the Grasshopper Primer. This primer was originally written by Andrew O. Payne of Lift Architects for Rhino 4 and Grasshopper version 0.6.0007. While that software advanced beyond a robust platform at that time, Rhino 5 and Grasshopper 0.9.0076 have more to offer us now. To ease the learning curve, we now offer this updated and web-based primer for the use of Grasshopper community members.
+You have just opened the third edition of the Grasshopper Primer. This primer was originally written by Andrew O. Payne of Lift Architects for Rhino 4 and Grasshopper version 0.6.0007. That software had already advanced beyond a robust platform, yet Rhino 5 and Grasshopper 0.9.0076 have more to offer us now. To ease the learning curve, we now offer this updated and web-based primer for the use of Grasshopper community members.
 
 Starting with an strong foundation, our team at [Mode Lab](http://modelab.is) worked on the look and feel of the third edition. This primer discusses the latest version of Grasshopper, highlighting its latest, most exciting improvements. The text, graphics, and examples intend to teach visual programming to the absolute beginner. Latter sections provide an introduction to Generative Design work-flows for the seasoned veteran. It is our goal that this primer serves as a field guide for new and existing users of  Grasshopper in their creative practice.
 
 This primer introduces you to the fundamental concepts and
 essential skill-building work-flows to effectively use Grasshopper. Foundations
 is the first volume in a forthcoming collection of Grasshopper primers. Here's what you can expect to learn from the primer:
-* **Introduction** - What is Grasshopper and how is it being used?
+* **Introduction** - What is Grasshopper and how is it used?
 * **Hello Grasshopper** - Make your first definition
 * **Anatomy of a Grasshopper Definition** - What makes up a definition?
 * **Building Blocks of Algorithms** - Start simple and build complexity
