@@ -9,7 +9,7 @@
 ###WELCOME
 You have just opened the third edition of the Grasshopper Primer. This primer was originally written by Andrew O. Payne of Lift Architects for Rhino 4 and Grasshopper version 0.6.0007. That software had already advanced beyond a robust platform, yet Rhino 5 and Grasshopper 0.9.0076 have more to offer us now. To ease the learning curve, we now offer this updated and web-based primer for the use of Grasshopper community members.
 
-Starting with an strong foundation, our team at [Mode Lab](http://modelab.is) worked on the look and feel of the third edition. This primer discusses the latest version of Grasshopper, highlighting its latest, most exciting improvements. The text, graphics, and examples intend to teach visual programming to the absolute beginner. Latter sections provide an introduction to Generative Design work-flows for the seasoned veteran. It is our goal that this primer serves as a field guide for new and existing users of  Grasshopper in their creative practice.
+Starting with an strong foundation, our team at [Mode Lab](http://modelab.is) worked on the look and feel of the third edition. This primer discusses the latest version of Grasshopper, highlighting its latest, most exciting improvements. The text, graphics, and examples can teach visual programming to an absolute beginner. Latter sections provide an introduction to Generative Design work-flows for the seasoned veteran. It is our goal that this primer serves as a field guide for new and existing users of  Grasshopper in their creative practice.
 
 This primer introduces you to the fundamental concepts and
 essential skill-building work-flows to effectively use Grasshopper. Foundations
@@ -27,9 +27,9 @@ We hope this primer inspires you to explore the possibilities of programming wit
 ---
 ### THE GRASSHOPPER PRIMER PROJECT
 
-The Grasshopper Primer was initiated by Bob McNeel, Scott Davidson, and the Grasshopper Development team at [Robert McNeel & Associates] (http://www.en.na.mcneel.com/).  
+The Grasshopper Primer was initiated by Bob McNeel, Scott Davidson, and the Grasshopper Development team at [Robert McNeel & Associates](http://www.en.na.mcneel.com/) (http://mcneel.com)
 
-**Mode Lab** authored the Third Edition of the primer. http://modelab.is
+[**Mode Lab**](http://modelab.is/) authored the Third Edition of the primer.
 
 ![Mode Lab Logo](0-about/images/MODELAB_Logo.png)
 
@@ -58,7 +58,7 @@ http://www.rhino3d.com/download/rhino/5/latest
 
 For designers who are exploring new shapes using generative algorithms,
 Grasshopper is a graphical algorithm editor tightly integrated with Rhino’s
-3D modeling tools. Unlike RhinoScript or Python, Grasshopper requires no
+3D modeling tools. Unlike Rhino-Script or Python, Grasshopper requires no
 knowledge of the abstract syntax of scripting, but still allows designers to build
 form generators from the simple to the awe inspiring.
 
