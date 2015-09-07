@@ -27,11 +27,13 @@ We hope this primer inspires you to explore the possibilities of programming wit
 ---
 ### THE GRASSHOPPER PRIMER PROJECT
 
-The Grasshopper Primer was initiated by Bob McNeel, Scott Davidson, and the Grasshopper Development team at [Robert McNeel & Associates] (http://www.en.na.mcneel.com/).  It is an open source project on Github.
+The Grasshopper Primer was initiated by Bob McNeel, Scott Davidson, and the Grasshopper Development team at [Robert McNeel & Associates] (http://www.en.na.mcneel.com/).  
 
 **Mode Lab** authored the Third Edition of the primer. http://modelab.is
 
 ![Mode Lab Logo](0-about/images/MODELAB_Logo.png)
+
+The Grasshopper Primer is now an open source project on Github.
 
 If you would like to contribute to this project, check out the git-hub project wiki to get started. https://github.com/modelab/grasshopper-primer/wiki
 
