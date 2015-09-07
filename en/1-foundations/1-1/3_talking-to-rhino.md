@@ -15,21 +15,25 @@ rules and instructions for how Rhino can automate tasks.
 ####1.1.3.1. VIEWPORT FEEDBACK
 All geometry that is generated using the various Grasshopper components will
 show up (by default) in the Rhino viewport. This preview is just an Open GL
-approximation of the actual geometry, and as such you will not be able to select
-the geometry in the Rhino viewport (you must first bake it into the scene). You
-can turn the geometry preview on/off by right-clicking on a component and
-selecting the Preview toggle. The geometry in the viewport is color coded to
-provide visual feedback. The image below outlines the default color scheme.
+approximation of the actual geometry, and as such you will not be able to
+select the geometry in the Rhino viewport (you must first bake it into the
+scene). You can turn the geometry preview on/off by right-clicking on a
+component and selecting the Preview toggle. The geometry in the viewport is
+color coded to provide visual feedback. The image below outlines the default
+color scheme.
 
 >Note: This is the default color scheme, which can be modified using the
 Document Preview Settings tool on the canvas toolbar.
 
 ![IMAGE](images/1-1-3/1-1-3_002-viewport-feedback.png)
->1. Green geometry in the viewport belongs to a component which is currently selected.
-2. Red geometry in the viewport belongs to a component which is currently unselected.
+>1. Green geometry in the viewport belongs to a component which is currently
+selected.
+2. Red geometry in the viewport belongs to a component which is currently
+unselected.
 3. Point geometry is drawn as a cross rather than a rectangle to distinguish it
  from other Rhino point objects.
-4. Blue feedback means you are currently making a selection in the Rhino Viewport.
+4. Blue feedback means you are currently making a selection in the Rhino
+Viewport.
 
 ####1.1.3.2. LIVE WIRES
 Grasshopper is a dynamic environment. Changes that are made are live and their
@@ -39,8 +43,10 @@ preview display is updated in the Rhino viewport.
 
 ####1.1.3.3. GUMBALL WIDGET
 When storing geometry as internalized in a Grasshopper parameter, the gumball
-allows you to interface with that geometry in the Rhino viewport. This update is
-live and updates will occur as you manipulate the gumball. In contrast, geometry
+allows you to interface with that geometry in the Rhino viewport. This updater
+is
+live and updates will occur as you manipulate the gumball. In contrast,
+geometry
 referenced from Rhino directly will continue to exist in the Rhino document and
 updates from Grasshopper will happen only after any changes occur (as opposed
 to during).
@@ -48,7 +54,8 @@ to during).
 ![IMAGE](images/1-1-3/1-1-3_004-gumball.png)
 
 ####1.1.3.4. BAKING GEOMETRY
-In order to work with (select, edit, transform, etc.) geometry in Rhino that was
+In order to work with (select, edit, transform, etc.) geometry in Rhino that
+was
 created in Grasshopper, you must “bake” it. Baking instantiates new geometry
 into the Rhino document based on the current state of the Grasshopper graph. It
 will no longer be responsive to the changes in your definition.
