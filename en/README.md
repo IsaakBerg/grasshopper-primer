@@ -38,7 +38,7 @@ If you would like to contribute to this project, check out the git-hub project w
 ### ACKNOWLEDGEMENTS
 A special thanks to David Rutten for the endless inspiration and invaluable
 work pioneering Grasshopper. We would also like to thank Andrew O. Payne
-for providing the assets from which this work initiated. Also, thanks to Bob McNeel and everyone at Robert McNeel & Associates for their generous support over the years.
+for providing the assets from which this work initiated. Huge thanks to Bob McNeel and everyone at Robert McNeel & Associates for their generous support over the years.
 
 ---
 ### REQUIRED SOFTWARE
