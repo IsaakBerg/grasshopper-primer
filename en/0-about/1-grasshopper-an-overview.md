@@ -1,27 +1,15 @@
 ## Grasshopper - an Overview
 
-#####Grasshopper is a visual programming editor developed by David Rutten at Robert McNeel & Associates.  As a Rhino plug-in, Grasshopper is a robust and versatile tool used by creative professionals the world over. Its features are invaluable in diverse fields including architecture, engineering and product-design. 
+#####Grasshopper is a visual programming editor developed by David Rutten at Robert McNeel & Associates.  As a Rhino plug-in, Grasshopper is a robust and versatile tool used by creative professionals the world over. Its features are invaluable in diverse fields, including architecture, art, engineering and product-design. 
 
 In tandem, Grasshopper and Rhino offer us:
-- the opportunity to define precise parametric control over models,
-- the capability to explore generative design workflows, and
-- a platform to develop higher-level programming logic.   
+- precise parameter-based control over models,
+- exploration of generative design workflows, and
+- a development platform suited for higher-level programming logic.   
 
 All this functionality fits into two intuitive, well-integrated graphical interfaces.
 
-The origins of Grasshopper can be traced to the functionality of Rhino3d
-Version 4’s “Record History” button. This built-in feature enabled users to
-store modeling procedures implicitly in the background as you go. If you lofted
-four curves with the recording on and then edited the control points of one of
-these curves, the surface geometry would update. Back in 2008, David posed
-the question: “what if you could have more explicit control over this history?”
-and the precursor to Grasshopper, Explicit History, was born. This exposed
-the history tree to editing in detail and empowered the user to develop logical
-sequences beyond the existing capabilities of Rhino3D’s built in features. Six
-years later, Grasshopper is now a robust visual programming editor that can
-be extended by suites of externally developed add-ons. Furthermore, it has
-fundamentally altered the workflows of professionals across multiple industries
-and fostered an active global community of users.
+The origins of Grasshopper traces back to the functionality of the “Record History” button in Rhino 4. This built-in feature enabled implicit storage of modeling procedures in the background. If you lofted four curves then edited the control points of one of them, the surface geometry would update. Back in 2008, David posed the question: "What if you could have more explicit control over this history?". The precursor to Grasshopper, Explicit History, was born. This exposed the history tree to editing in detail and empowered the user to develop logical sequences beyond the existing capabilities of Rhino3D’s built in features. Grasshopper is now a robust visual programming editor extensible by externally-developed add-on suites. Furthermore, it has fundamentally altered the work-flows of professionals across multiple industries and fostered an active global community of users.
 
 This primer focuses on Foundations, offering the core knowledge you need
 to dive into regular use of Grasshopper and several on-ramps to how you
