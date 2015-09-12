@@ -2,8 +2,9 @@
 
 * [About](README.md)
    * [Grasshopper - an Overview](0-about/1-grasshopper-an-overview.md)
-   * [Grasshopper in Action](0-about/2-grasshopper-in-action.md)
-* [Foundations](1-foundations/1-foundations.md)
+   * [Grasshopper in Action](0-about/2-grasshopper-in-action.md) 
+ 
+#[BOOK 1 - Foundations](1-foundations/1-foundations.md)
    * [Hello Grasshopper!](1-foundations/1-1/0_hello-grasshopper.md)
        * [Installing and Launching Grasshopper](1-foundations/1-1/1_installing-and-launching-grasshopper.md)
        * [The Grasshopper UI](1-foundations/1-1/2_the-grasshopper-ui.md)
@@ -40,12 +41,13 @@
        * [Mesh Operations](1-foundations/1-6/4_Mesh Operations.md)
        * [Mesh Interactions](1-foundations/1-6/5_Mesh Interactions.md)
        * [Working with Mesh Geometry](1-foundations/1-6/6_Working with Mesh Geometry.md)
-#BOOK 2 - Extensions
-#* [Extensions](2-extensions/2-extensions.md)
-#    * [Element*](2-extensions/2-1/Element.md)
-* [Appendix](appendix/README.md)
-   * [Index](appendix/A-1/0_index-of-components.md)
-   * [Example Files](appendix/A-2/1_gh-files.md)
-   * [Resources](appendix/A-2/0_resources.md)
-   * [About This Primer](appendix/A-3/0_about-this-primer.md)
+       
+#[BOOK 2 - Extensions](2-extensions/2-extensions.md) 
+* [Element](2-extensions/2-1/Element.md) 
+
+#[Appendix](appendix/README.md) 
+* [Index](appendix/A-1/0_index-of-components.md) 
+* [Example Files](appendix/A-2/1_gh-files.md) 
+* [Resources](appendix/A-2/0_resources.md) 
+* [About This Primer](appendix/A-3/0_about-this-primer.md)
 
