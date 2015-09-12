@@ -18,7 +18,7 @@
    * [Building Blocks of Algorithms](1-foundations/1-3/0_building-blocks-of-algorithms.md) 
        * [Points Planes & Vectors](1-foundations/1-3/1_points-planes-vectors.md) 
        * [Working With Attractors](1-foundations/1-3/2_working-with-attractors.md) 
-       * [Mathematics, Expressions & Conditionals](1-foundations/1-3/3_mathematics-expressions-conditionals.md) 
+       * [Mathematics, Expressions & Conditionals](1-foundations/1-3/3_mathematics-exprsions-conditionals.md)
        * [Domains & Color](1-foundations/1-3/4_domains-color.md) 
        * [Booleans and Logical Operators](1-foundations/1-3/5_booleans-logical-operators.md) 
    * [Designing with Lists](1-foundations/1-4/0_designing-with-lists.md) 
