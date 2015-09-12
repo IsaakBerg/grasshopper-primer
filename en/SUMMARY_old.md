@@ -46,7 +46,7 @@
 
 * [Element](2-extensions/2-1/Element.md) 
 
-#[Appendix](appendix/README.md)#
+#[Appendix](appendix/README.md)
 * [Index](appendix/A-1/0_index-of-components.md) 
 * [Example Files](appendix/A-2/1_gh-files.md) 
 * [Resources](appendix/A-2/0_resources.md) 
