@@ -1,4 +1,4 @@
-# Summary 
+# Summary #
 
 * [About](README.md) 
    * [Grasshopper - an Overview](0-about/1-grasshopper-an-overview.md) 
