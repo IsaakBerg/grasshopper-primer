@@ -26,7 +26,7 @@ the user manipulates logic elements graphically instead of textually. Some of
 the most well-known textual programming languages such as C#, Visual Basic,
 Processing – and even Python and Rhino-script dictate that we write code bound by language-specific syntax. In contrast, visual
 programming allows us to connect functional blocks into a sequence of actions
-where the "syntax" requires that the inputs of the blocks receive the data
+where the “syntax” requires that the inputs of the blocks receive the data
 of the appropriate type, organized according to the desired result (\*). This characteristic of visual programming avoids the barrier to entry
 commonly found in trying to learn a new language, even a spoken one, as well as
 foregrounds the interface, which for designers locates Grasshopper within more
