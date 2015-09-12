@@ -9,7 +9,7 @@ In tandem, Grasshopper and Rhino offer us:
 
 All this functionality fits into two intuitive, well-integrated graphical interfaces.
 
-The origins of Grasshopper traces back to the functionality of the "Record History" button in Rhino 4. This built-in feature enabled implicit storage of modeling procedures in the background. If you lofted four curves then edited the control points of one of them, the surface geometry would update. Back in 2008, David posed the question: "What if you could have more explicit control over this history?". The precursor to Grasshopper, Explicit History, was born. During six years of development, a new paradigm metastasized into the Grasshopper plug-in. 
+The origins of Grasshopper traces back to the functionality of the “Record History” button in Rhino 4. This built-in feature enabled implicit storage of modeling procedures in the background. If you lofted four curves then edited the control points of one of them, the surface geometry would update. Back in 2008, David posed the question: “What if you could have more explicit control over this history?”. The precursor to Grasshopper, Explicit History, was born. During six years of development, a new paradigm metastasized into the Grasshopper plug-in. 
 These changes have exposed the history-tree to editing in detail. This in-turn has empowered users to raise logical sequencing to a higher level.
 
 Grasshopper became a robust editor for parametric-programming in an interactive and visual way. Externally-developed add-on suites extend its capabilities further. It has fundamentally altered the work-flows of professionals across industries. It fosters an active global community of users that inspire, help, train and learn from one another.
@@ -19,7 +19,7 @@ to dive into regular use of Grasshopper and on-ramps outlining how you
 might go further within your own creative practice. Before diving into the
 descriptions, diagrams, and examples supplied hereafter, let's discuss what visual
 programming is, the basics of the Grasshopper interface and terminology, as well
-as the "live" characteristics of the view-port feedback and user experience.
+as the “live” characteristics of the view-port feedback and user experience.
 
 Visual Programming is a paradigm of computer programming within which
 the user manipulates logic elements graphically instead of textually. Some of
@@ -39,22 +39,22 @@ familiar territory.
 
 To access Grasshopper and its visual programming capabilities, we need to
 download and install the program from the website, [Grasshopper3D.com](http://Grasshopper3D.com/).
-Once installed, we can open the plug-in by typing "Grasshopper" into the Rhino
-Command Line. The first time we do so in a new session of Rhino, we see the Grasshopper loading prompt followed by the Grasshopper editor window. We can now add functional blocks called "components" to the
-"canvas", connect them with "wires", and save the entire "definition" in the .ghx
+Once installed, we can open the plug-in by typing *Grasshopper* into the Rhino
+Command Line. The first time we do so in a new session of Rhino, we see the Grasshopper loading prompt followed by the Grasshopper editor window. We can now add functional blocks called “components” to the
+“canvas”, connect them with “wires”, and save the entire “definition” in the .ghx
 file format.
 
 ![IMAGE](images/gh-definition.png)
 >A Grasshopper definition, made up of components connected with wires on the canvas
 
-Once we've started to develop a Grasshopper definition and created "slider"
+Once we've started to develop a Grasshopper definition and created “slider”
 objects within our canvas to control geometry, we may naturally intuit the
 connection we've made between this input object to what we see in Rhino's
 view-ports. This connection is essentially live. While we adjust the grip on the slider, we see the immediate consequences within our definition.  In other words, as soon as an input value changes, the program recomputes a solution and displays the new result. To our benefit when getting started with using Grasshopper,
 the geometry preview we see is a lightweight representation of the solution
 and it automatically updates. It is important to take note of this connection
 because when your definitions become more complex, adeptly managing the flow of
-data, the status of the "solver", and the preview in the Rhino view-port will prevent unwanted headaches.
+data, the status of the “solver”, and the preview in the Rhino view-port will prevent unwanted headaches.
 
 ![IMAGE](images/flow.png)
 >Program flow from left to right
