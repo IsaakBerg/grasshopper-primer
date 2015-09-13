@@ -6,58 +6,39 @@ rules and instructions for how Rhino can automate tasks.
 
 ![IMAGE](images/1-1-3/1-1-3_001-talking-to-rhino.png)
 >1. Grasshopper preview geometry.
-2. Rhino viewports.
+2. Rhino view-ports.
 3. Grasshopper Application window.
 
 
 
 
-####1.1.3.1. VIEWPORT FEEDBACK
-All geometry that is generated using the various Grasshopper components will
-show up (by default) in the Rhino viewport. This preview is just an Open GL
-approximation of the actual geometry, and as such you will not be able to
-select the geometry in the Rhino viewport (you must first bake it into the
-scene). You can turn the geometry preview on/off by right-clicking on a
-component and selecting the Preview toggle. The geometry in the viewport is
-color coded to provide visual feedback. The image below outlines the default
-color scheme.
+####1.1.3.1. VIEW-PORT FEEDBACK
+All geometry generated using the Grasshopper components shows up in the Rhino view-port by default. This preview is just an Open GL approximation of the actual geometry. You will not be able to select the geometry in the Rhino view-port until you have “baked” it into the scene. You can turn the geometry preview on/off by right-clicking on a component and selecting the Preview toggle. The geometry in the view-port is color-coded to provide visual feedback. The image below outlines the default color scheme.
 
->Note: This is the default color scheme, modifiable with the Document Preview Settings tool on the canvas toolbar.
+>Note: This is the default color scheme.  One can change color schemes using the Document Preview Settings tool on the canvas toolbar within Grasshopper.
 
 ![IMAGE](images/1-1-3/1-1-3_002-viewport-feedback.png)
->1. Green geometry in the viewport belongs to a component which is currently
-selected.
-2. Red geometry in the viewport belongs to a component which is currently
-unselected.
-3. Point geometry is drawn as a cross rather than a rectangle to distinguish it
- from other Rhino point objects.
-4. Blue feedback means you are currently making a selection in the Rhino
-Viewport.
+>1. Green geometry in the view-port belongs to a component in the current selection.
+2. Red geometry in the view-port belongs to a component not in the current selection.
+3. Points drawn as crosses belong to preview geometry rather than Rhino geometry. In contrast, geometric-points in Rhino appear as rectangles.
+4. Blue feedback delineates a selection underway in the Rhino view-port.
 
 ####1.1.3.2. LIVE WIRES
-Grasshopper is a dynamic environment. Changes that are made are live and their
-preview display is updated in the Rhino viewport.
+Grasshopper is a dynamic environment. Changes made to input parameters are live and their preview displays update in the Rhino view-port as soon as possible.
 
 ![IMAGE](images/1-1-3/1-1-3_003-live-wires.png)
 
 ####1.1.3.3. GUMBALL WIDGET
 When storing geometry as internalized in a Grasshopper parameter, the gumball
-allows you to interface with that geometry in the Rhino viewport. This updater
-is
-live and updates will occur as you manipulate the gumball. In contrast,
-geometry
-referenced from Rhino directly will continue to exist in the Rhino document and
-updates from Grasshopper will happen only after any changes occur (as opposed
+allows you to interface with that geometry in the Rhino view-port. This updater
+is live and updates will occur as you manipulate the gumball. In contrast,
+geometry referenced from Rhino directly will continue to exist in the Rhino document and updates from Grasshopper will happen only after any changes occur (as opposed
 to during).
 
 ![IMAGE](images/1-1-3/1-1-3_004-gumball.png)
 
 ####1.1.3.4. BAKING GEOMETRY
-In order to work with (select, edit, transform, etc.) geometry in Rhino that
-was
-created in Grasshopper, you must “bake” it. Baking instantiates new geometry
-into the Rhino document based on the current state of the Grasshopper graph. It
-will no longer be responsive to the changes in your definition.
+To work with (e.g. select, edit, transform, etc.) Grasshopper's preview from Rhino, you must “bake” it. Baking a Grasshopper preview object treats it as a mold from which a new Rhino object is cast. Baked geometry in the Rhino document ignores further changes in your Grasshopper definition.
 
 ![IMAGE](images/1-1-3/1-1-3_005-baking.png)
 >1. Bake by right-clicking a component and selecting Bake.
