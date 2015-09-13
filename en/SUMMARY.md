@@ -1,8 +1,7 @@
 # Summary
 
-* [Introduction](README.md)
-* [About](README.md) 
-   * [Grasshopper - an Overview](0-about/1-grasshopper-an-overview.md) 
+* [About](README.md)
+   * [Grasshopper - an Overview](0-about/1-grasshopper-an-overview.md)
    * [Grasshopper in Action](0-about/2-grasshopper-in-action.md) 
  
 #[BOOK 1 - Foundations](1-foundations/1-foundations.md)
