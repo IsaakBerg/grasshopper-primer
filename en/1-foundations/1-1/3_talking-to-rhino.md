@@ -31,9 +31,7 @@ Grasshopper is a dynamic environment. Changes made to input parameters are live 
 ####1.1.3.3. GUMBALL WIDGET
 When storing geometry as internalized in a Grasshopper parameter, the gumball
 allows you to interface with that geometry in the Rhino view-port. This updater
-is live and updates will occur as you manipulate the gumball. In contrast,
-geometry referenced from Rhino directly will continue to exist in the Rhino document and updates from Grasshopper will happen only after any changes occur (as opposed
-to during).
+is live and updates will occur as you manipulate the gumball. If editing Rhino geometry without the gumball, Grasshopper will not update in this live mode.
 
 ![IMAGE](images/1-1-3/1-1-3_004-gumball.png)
 
