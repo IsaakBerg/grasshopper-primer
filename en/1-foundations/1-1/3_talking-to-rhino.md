@@ -22,8 +22,7 @@ component and selecting the Preview toggle. The geometry in the viewport is
 color coded to provide visual feedback. The image below outlines the default
 color scheme.
 
->Note: This is the default color scheme, which can be modified using the
-Document Preview Settings tool on the canvas toolbar.
+>Note: This is the default color scheme, modifiable with the Document Preview Settings tool on the canvas toolbar.
 
 ![IMAGE](images/1-1-3/1-1-3_002-viewport-feedback.png)
 >1. Green geometry in the viewport belongs to a component which is currently
