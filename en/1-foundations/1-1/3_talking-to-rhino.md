@@ -61,7 +61,7 @@ Grasshopper's Remote Control Panel (RCP), like Rhino's own tool-bars, can hover
 over Rhino or dock into it, allowing Rhino view-ports to use most of the screen.
 Activating the toggle under the View menu of the Main Menu bar in Grasshopper makes the RCP visible. Initially, the RCP is blank — containing no Grasshopper parameter controls. Right-clicking on a Grasshopper control opens a context-based menu.  Invoking the “Publish To Remote Panel” menu item puts a linked copy of the control into the RCP.  This linked copy controls the original control “remotely” from within Rhino. Multiple Grasshopper UI parameter control elements fit into the RCP in like manner. This maximizes the screen area available for seeing the updated preview results in Rhino.
 
->Note: Linked copies of published controls appear in the RCP labeled with the names of the original controls. As a best practice, provide all UI with comprehensible and meaningful names. Properly labeled elements will make both Grasshopper and RCP interfaces easier to use.
+Remote Control Panel item labels generate from the names of the remotely-controlled controls. As a best practice, provide controls with comprehensible, meaningful names before publishing them. Properly labeled elements will make both Grasshopper and Rhino interfaces easier to use.
 
 
 ![IMAGE](images/1-1-3/1-1-3_007-remote-control1.png)
@@ -74,12 +74,12 @@ mode. Arrange its UI elements by groups and assign groups labels and colors. To
 delete unnecessary UI elements, simply drag them past the edge of the RCP.
 Afterwards, toggle the RCP back into working mode to resume normal functions.
 
->_The Remote Control Panel has two modes: Edit Mode (left) which allows you to
-reorganize the look and feel of the RCP, and Working Mode where you can modify
-the actual values of the UI elements._
+>_The Remote Control Panel has two modes: Edit Mode (left), which allows you to
+reorganize its look and feel, and Working Mode, where you can change
+the values of the design parameters via the controls.
+
 ![IMAGE](images/1-1-3/1-1-3_008-remote-control2.png)
 >The Remote Control Panel in Edit Mode has an orange background.
-
 
 
 
@@ -94,7 +94,7 @@ Grasshopper and Rhino files in the same folder, and giving them related names.
 3. Grasshopper file.
 
 ####1.1.3.8. TEMPLATES
-Creating and specifiying a template file in your Grasshopper preferences is
+Creating and specifying a template file in your Grasshopper preferences is
 convenient way to set up every new Grasshopper definition you create. The
 template can include Grasshopper components as well as panels and sketch
 objects for labeling.
