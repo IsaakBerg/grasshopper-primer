@@ -79,8 +79,7 @@ Remote Control Panel item labels generate from the names of the remotely-control
 
 To help users understand your RCP, make sure it is well-organized. Click the
 green pencil in the RCP's upper right corner to toggle the RCP into its editing
-mode. Arrange its UI elements by groups and assign groups labels and colors. To
-delete unnecessary UI elements, drag them past the edge of the RCP. Afterwards, toggle the RCP back into working mode to resume normal functions.
+mode. Arrange its UI elements by groups and assign labels and colors to these groups. To delete unnecessary UI elements, drag them past the edge of the RCP. Afterwards, toggle the RCP back into working mode to resume normal functions.
 
 >_The Remote Control Panel has two modes: Edit Mode (left), which allows you to
 reorganize its look and feel, and Working Mode, where you can change
