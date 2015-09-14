@@ -15,7 +15,7 @@ rules and instructions for how Rhino can automate tasks.
 ####1.1.3.1. VIEW-PORT FEEDBACK
 All geometry generated using the Grasshopper components shows up in the Rhino view-port by default. This preview is just an Open GL approximation of the actual geometry. You will not be able to select the geometry in the Rhino view-port until you have “baked” it into the scene. You can turn the geometry preview on/off by right-clicking on a component and selecting the Preview toggle. The geometry in the view-port is color-coded to provide visual feedback. The image below outlines the default color scheme.
 
->Note: This is the default color scheme.  One can change color schemes using the Document Preview Settings tool on the canvas toolbar within Grasshopper.
+>Note: This is the default color scheme.  You can edit it using the Document-Preview-Settings dialog. That dialog is accessible in Grasshopper through a button on the canvas toolbar. It also opens after invoking "Preview Settings..." on the "Display" menu.
 
 ![IMAGE](images/1-1-3/1-1-3_002-viewport-feedback.png)
 >1. Green geometry in the view-port belongs to a component in the current selection.
