@@ -6,66 +6,42 @@ rules and instructions for how Rhino can automate tasks.
 
 ![IMAGE](images/1-1-3/1-1-3_001-talking-to-rhino.png)
 >1. Grasshopper preview geometry.
-2. Rhino viewports.
+2. Rhino view-ports.
 3. Grasshopper Application window.
 
 
+####1.1.3.1. VIEW-PORT FEEDBACK
+All geometry generated using the Grasshopper components shows up in the Rhino view-port by default. This preview is just an Open GL approximation of the actual geometry. You will not be able to select the geometry in the Rhino view-port until you have “baked” it into the scene. You can turn the geometry preview on/off by right-clicking on a component and selecting the Preview toggle. The geometry in the view-port is color-coded to provide visual feedback. The image below outlines the default color scheme.
 
-
-####1.1.3.1. VIEWPORT FEEDBACK
-All geometry that is generated using the various Grasshopper components will
-show up (by default) in the Rhino viewport. This preview is just an Open GL
-approximation of the actual geometry, and as such you will not be able to
-select the geometry in the Rhino viewport (you must first bake it into the
-scene). You can turn the geometry preview on/off by right-clicking on a
-component and selecting the Preview toggle. The geometry in the viewport is
-color coded to provide visual feedback. The image below outlines the default
-color scheme.
-
->Note: This is the default color scheme, which can be modified using the
-Document Preview Settings tool on the canvas toolbar.
+>Note: This is the default color scheme.  You can edit it using the Document Preview Settings dialog. That dialog is accessible in Grasshopper through a button on the canvas toolbar. It also opens after invoking “Preview Settings...” on the “Display” menu.
 
 ![IMAGE](images/1-1-3/1-1-3_002-viewport-feedback.png)
->1. Green geometry in the viewport belongs to a component which is currently
-selected.
-2. Red geometry in the viewport belongs to a component which is currently
-unselected.
-3. Point geometry is drawn as a cross rather than a rectangle to distinguish it
- from other Rhino point objects.
-4. Blue feedback means you are currently making a selection in the Rhino
-Viewport.
+>1. Green geometry in the view-port belongs to a component in the current selection.
+2. Red geometry in the view-port belongs to a component not in the current selection.
+3. Points drawn as crosses belong to preview geometry rather than Rhino geometry. In contrast, geometric-points in Rhino appear as rectangles.
+4. Blue feedback delineates a selection underway in the Rhino view-port.
 
 ####1.1.3.2. LIVE WIRES
-Grasshopper is a dynamic environment. Changes that are made are live and their
-preview display is updated in the Rhino viewport.
+Grasshopper is a dynamic environment. Changes made to input parameters are live and their preview displays update in the Rhino view-port as soon as possible.
 
 ![IMAGE](images/1-1-3/1-1-3_003-live-wires.png)
 
 ####1.1.3.3. GUMBALL WIDGET
 When storing geometry as internalized in a Grasshopper parameter, the gumball
-allows you to interface with that geometry in the Rhino viewport. This updater
-is
-live and updates will occur as you manipulate the gumball. In contrast,
-geometry
-referenced from Rhino directly will continue to exist in the Rhino document and
-updates from Grasshopper will happen only after any changes occur (as opposed
-to during).
+allows you to interface with that geometry in the Rhino view-port. This updater
+is live and updates will occur as you manipulate the gumball. If editing Rhino geometry without the gumball, Grasshopper will not update in this live mode.
 
 ![IMAGE](images/1-1-3/1-1-3_004-gumball.png)
 
 ####1.1.3.4. BAKING GEOMETRY
-In order to work with (select, edit, transform, etc.) geometry in Rhino that
-was
-created in Grasshopper, you must “bake” it. Baking instantiates new geometry
-into the Rhino document based on the current state of the Grasshopper graph. It
-will no longer be responsive to the changes in your definition.
+To work with (e.g. select, edit, transform, etc.) Grasshopper's preview from Rhino, you must “bake” it. Baking a Grasshopper preview object treats it as a mold from which a new Rhino object is cast. Baked geometry in the Rhino document ignores further changes in your Grasshopper definition.
 
 ![IMAGE](images/1-1-3/1-1-3_005-baking.png)
 >1. Bake by right-clicking a component and selecting Bake.
 2. A dialog will appear that allows you to select onto which Rhino layer the
 geometry will bake.
 3. Grouping your baked geometry is a convenient way to manage the instantiated
-Rhino geometry, particularly if you are creating many objects with Grasshopper.
+Rhino geometry, particularly if creating multiple objects with Grasshopper.
 
 
 ####1.1.3.5. UNITS & TOLERANCES
@@ -77,29 +53,15 @@ Properties menu. Select Units to change the units and tolerances.
 >Change the units and tolerances in the Rhino Document Properties menu.
 
 ####1.1.3.6. REMOTE CONTROL PANEL
-Grasshopper is an incredibly powerful and flexible Rhino plugin which allows
-rapid exploration of design iterations using a graphic interface. However since
-both Rhino and Grasshopper have their own interfaces which each require lots of
-screen pixels to meaningfully use, trying to suitably arrange both Rhino and
-Grasshopper windows can be a challenge, particularly when the pixels available
-are a scarce resource. An elegant solution allows Rhino's interface to keep the
-focus and yet lets the user adjust key Grasshopper parameters whenever needed.
+Grasshopper is a plug-in for Rhino which supports a rapid, visual exploration of a design's parameter space. It offers a flexible graphic interface for making parameter adjustments. The effects of any adjustments are visible in a collection of temporary geometry results. The geometry results display nearly instantaneously during or after parameter changes. These abilities comprise a powerful tool for a designer.
 
-Grasshopper's Remote Control Panel (RCP), like Rhino's own toolbars, can hover
-over Rhino or dock into it, allowing Rhino viewports to use most of the screen.
-The RCP can be instantiated by activating the toggle under the View menu of the
-Main Menu bar in Grasshopper. Initially, the RCP is blank — containing no user
-interface element copies of Grasshopper inputs.  Right-clicking on a UI element
-in Grasshopper and invoking its Publish To Remote Panel command copies a linked
-version of it into the RCP providing a more visually compact way to control it
-from within Rhino. Multiple Grasshopper UI elements can be published to the RCP
-so they are conveniently accessible in a way that maximizes the screen area
-available for seeing the updated preview results in Rhino after each UI change.
+Both Rhino and Grasshopper have rich interfaces which are easier to use when ample screen area is available. As a consequence, trying to suitably arrange both Rhino and Grasshopper windows can be a challenge.  The problem becomes particularly acute when working on a small monitor. An elegant solution allows the user to add key Grasshopper controls to Rhino's interface.  This enables Rhino to use the entire screen. However, the user can still adjust the Grasshopper parameters whenever they want.
 
->Note: Each linked copy of published UI elements will be labelled in the RCP
-with the original UI element's name. As a best practice, provide all UI input
-elements with comprehensible and meaningful names. Properly labelled elements
-will make both Grasshopper and RCP interfaces easier to use.
+Grasshopper's Remote Control Panel (RCP), like Rhino's own tool-bars, can hover
+over Rhino or dock into it, allowing Rhino view-ports to use most of the screen.
+Activating the toggle under the View menu of the Main Menu bar in Grasshopper makes the RCP visible. Initially, the RCP is blank — containing no Grasshopper parameter controls. Right-clicking on a Grasshopper control opens a context-based menu.  Invoking the “Publish To Remote Panel” menu item puts a linked copy of the control into the RCP.  This linked copy controls the original control “remotely” from within Rhino. Multiple Grasshopper UI parameter control elements fit into the RCP in like manner. This maximizes the screen area available for seeing the updated preview results in Rhino.
+
+>Note: Linked copies of published controls appear in the RCP labeled with the names of the original controls. As a best practice, provide all UI with comprehensible and meaningful names. Properly labeled elements will make both Grasshopper and RCP interfaces easier to use.
 
 
 ![IMAGE](images/1-1-3/1-1-3_007-remote-control1.png)
