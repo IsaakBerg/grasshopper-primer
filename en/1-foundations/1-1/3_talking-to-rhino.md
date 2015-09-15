@@ -40,8 +40,9 @@ Referenced and picked data alike act as input sources to the Grasshopper definit
 
 In Rhino, gum-ball widgets enable mouse manipulations of geometry position, size and orientation. Rhino's gum-ball widgets manipulate existing Rhino geometry stored in its file. Similarly, Grasshopper's gumball widgets allow mouse-manipulation of data stored directly in Grasshopper.  Thus, Grasshopper's gumball widgets appear under two conditions. The Grasshopper “Gumballs” display toggle must rest in its highlighted, enabled state. This display toggle appears under the “Display” menu in Grasshopper. The geometry selected in Grasshopper must include at least one picked data-set. 
 
-Gumball widgets in Grasshopper appear for “picked data” alone. Each picked data selected in Grasshopper will display an associated Grasshopper gumball in Rhino. Grasshopper gumballs can directly manipulate the picked data via mouse movements. 
-*Updates to picked elements using these Grasshopper gumballs are live. Updates to previewed geometry results will occur while you manipulate the gumball.*
+Gumball widgets in Grasshopper appear for “picked data” alone. Each picked geometry selected in Grasshopper will display an associated Grasshopper gumball in Rhino. Grasshopper gumballs can directly manipulate the picked data via mouse movements.
+
+####*Updates to picked elements using these Grasshopper gumballs are live. Updates to any dependent calculated geometry will occur even as you manipulate the gumball.*
 
 Grasshopper's gumball settings do not govern the Rhino gumballs associated with existing Rhino geometry. Likewise, Rhino gumball settings do not affect gumballs associated with picked objects.
 
