@@ -34,7 +34,7 @@ Grasshopper is a dynamic environment. Changes made to input parameters are live 
 ####1.1.3.3. GUMBALL WIDGET
 Some Grasshopper preview items can display gum-balls. To know which ones, it helps to distinguish referenced Rhino data from picked Grasshopper data.
 
-Specifying either picked-objects or referenced-objects starts in the Grasshopper interface. When the user chooses to add to a geometry collection, Grasshopper prompts the user to use Rhino to make a choice.  It lets the user include one or more existing Rhino objects in the collection by reference. In this discussion, “referenced objects” refer to these. Grasshopper also allows the user to add items by dynamically picking new coordinates as a set of raw geometry data. The Grasshopper definition stores this geometry data set, which we call here a “picked object”. 
+Specifying either picked-objects or referenced-objects starts in the Grasshopper interface. When the user chooses to add to a geometry collection, Grasshopper prompts the user to use Rhino to specify a geometry item.  It lets the user include one or more existing Rhino objects in the collection by reference. In this discussion, “referenced objects” refer to these. Grasshopper also allows the user to add items by dynamically picking new coordinates as a set of raw geometry data. The Grasshopper definition stores this geometry data set, which we call here a “picked object”. 
 
 Referenced and picked objects alike act as source data to the Grasshopper definition. The Grasshopper definition acts on the combined source data to produce calculated geometrical objects.  The Grasshopper definition stores the instructions for calculated results from the source data. It does not store the calculated geometrical results themselves.
 
