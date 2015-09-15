@@ -34,14 +34,14 @@ Grasshopper is a dynamic environment. Changes made to input parameters are live 
 ####1.1.3.3. GUMBALL WIDGET
 Some Grasshopper preview items can display gum-balls. To know which ones, it helps to distinguish referenced Rhino data from picked Grasshopper data.
 
-Specifying either picked-objects or referenced-objects starts in the Grasshopper interface. When the user chooses to add to a geometry collection, Grasshopper prompts the user to use Rhino to specify a geometry item.  It lets the user include one or more existing Rhino objects in the collection by reference. In this discussion, “referenced objects” refer to these. Grasshopper also allows the user to add items by dynamically picking new coordinates as a set of raw geometry data. The Grasshopper definition stores this geometry data set, which we call here a “picked object”. 
+Specifying either picked-objects or referenced-objects starts in the Grasshopper interface. When the user chooses to add to a geometry collection, Grasshopper prompts the user to use Rhino to specify a geometry item.  It lets the user include one or more existing Rhino objects in the collection by reference. In this discussion, “referenced data” refer to these. Grasshopper also allows the user to add items by dynamically picking new coordinates as a set of raw geometry data. The Grasshopper definition stores this geometry data set, which we call here “picked data”. 
 
-Referenced and picked objects alike act as source data to the Grasshopper definition. The Grasshopper definition acts on the combined source data to produce calculated geometrical objects.  The Grasshopper definition stores the instructions for calculated results from the source data. It does not store the calculated geometrical results themselves.
+Referenced and picked data alike act as input sources to the Grasshopper definition. The Grasshopper definition acts on the combined source data to produce calculated geometrical objects.  The Grasshopper definition stores the instructions for calculated results from the source data. It does not store the calculated geometrical results themselves.
 
-In Rhino, gum-ball widgets enable mouse manipulations of object positions, sizes and orientations. Rhino's gum-ball widgets manipulate existing Rhino objects stored in its file. Similarly, Grasshopper's gumball widgets allow mouse-manipulation of data stored directly in Grasshopper.  Thus, Grasshopper's gumball widgets appear under two conditions. The Grasshopper “Gumballs” display toggle must rest in its highlighted, enabled state. This display toggle appears under the “Display” menu in Grasshopper. The geometry selected in Grasshopper must include at least one picked object. 
+In Rhino, gum-ball widgets enable mouse manipulations of geometry position, size and orientation. Rhino's gum-ball widgets manipulate existing Rhino geometry stored in its file. Similarly, Grasshopper's gumball widgets allow mouse-manipulation of data stored directly in Grasshopper.  Thus, Grasshopper's gumball widgets appear under two conditions. The Grasshopper “Gumballs” display toggle must rest in its highlighted, enabled state. This display toggle appears under the “Display” menu in Grasshopper. The geometry selected in Grasshopper must include at least one picked data-set. 
 
-Gumball widgets in Grasshopper appear for “picked object” data alone. Each picked  input item selected in Grasshopper will display its Grasshopper gumball in Rhino. Grasshopper gumballs can directly manipulate the picked data via mouse movements. 
-Updates to picked elements using these Grasshopper gumballs are live. Updates to previewed geometry results will occur while you manipulate the gumball. 
+Gumball widgets in Grasshopper appear for “picked data” alone. Each picked data selected in Grasshopper will display an associated Grasshopper gumball in Rhino. Grasshopper gumballs can directly manipulate the picked data via mouse movements. 
+*Updates to picked elements using these Grasshopper gumballs are live. Updates to previewed geometry results will occur while you manipulate the gumball.*
 
 Grasshopper's gumball settings do not govern the Rhino gumballs associated with existing Rhino geometry. Likewise, Rhino gumball settings do not affect gumballs associated with picked objects.
 
@@ -50,7 +50,7 @@ Grasshopper's gumball settings do not govern the Rhino gumballs associated with 
 
 
 ####1.1.3.4. BAKING GEOMETRY
-To work with (e.g. select, edit, transform, etc.) Grasshopper's preview from Rhino, you must “bake” it. Baking a Grasshopper preview object treats it as a mold from which a new Rhino object is cast. Baked geometry in the Rhino document ignores further changes in your Grasshopper definition.
+To work with (e.g. select, edit, transform, etc.) Grasshopper's preview from Rhino, you must “bake” it. Baking a Grasshopper preview geometry treats it as a mold from which new Rhino geometry is cast. Baked geometry in the Rhino document ignores further changes in your Grasshopper definition.
 
 ![IMAGE](images/1-1-3/1-1-3_005-baking.png)
 >1. Bake by right-clicking a component and selecting Bake.
@@ -90,7 +90,7 @@ To help users understand your RCP, make sure it is well-organized. Click the
 green pencil in the RCP's upper right corner to toggle the RCP into its editing
 mode. Arrange its UI elements by groups and assign labels and colors to these groups. To delete unnecessary UI elements, drag them past the edge of the RCP. Afterwards, toggle the RCP back into working mode to resume normal functions.
 
->_The Remote Control Panel has two modes: Edit Mode (left), which allows you to
+>The Remote Control Panel has two modes: Edit Mode (left), which allows you to
 reorganize its look and feel, and Working Mode, where you can change
 the values of the design parameters via the controls.
 
