@@ -32,9 +32,13 @@ Grasshopper is a dynamic environment. Changes made to input parameters are live 
 
 
 ####1.1.3.3. GUMBALL WIDGET
-When storing geometry as internalized in a Grasshopper parameter, the gumball
-allows you to interface with that geometry in the Rhino view-port. This updater
-is live and updates will occur as you manipulate the gumball. If editing Rhino geometry without the gumball, Grasshopper will not update so soon. Instead, it will update right after the operator stops changing the value.
+It is possible to use gumball widgets in Rhino to edit preview geometry stored in Grasshopper. These gumball widgets will appear under two conditions. One condition requires the "Gumballs" icon under the "Display" menu toggled to highlighted. The other is that the geometric element must be an object picked from within Grasshopper.
+
+Setting Grasshopper references to existing Rhino objects does not create picked objects.  Calculating new Grasshopper objects does not create picked objects.
+
+Updates to picked elements using these gumballs are live. Updates to previewed geometry results will occur while you manipulate the gumball. 
+
+While Rhino geometry to which a Grasshopper reference is set gets moved, geometry in the preview does not update. Instead, it will update right after the operator stops changing the value.
 
 ![IMAGE](images/1-1-3/1-1-3_004-gumball.png)
 
@@ -99,6 +103,7 @@ Grasshopper and Rhino files in the same folder, and giving them related names.
 >1. Project Folder.
 2. Rhino file.
 3. Grasshopper file.
+
 
 ####1.1.3.8. TEMPLATES
 Creating and specifying a template file in your Grasshopper preferences is
