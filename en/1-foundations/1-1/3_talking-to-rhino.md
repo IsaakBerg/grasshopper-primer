@@ -10,7 +10,7 @@ rules and instructions for how Rhino can automate tasks.
 3. Grasshopper Application window.
 
 ###Data Sources
-One of the main ways to get data into the Grasshopper definition is to use a geometry collection parameter.
+It is helpful to pass data to a Grasshopper file so it can carry out the instructions and automation defined by its wiring. One of the main data-transfer mechanisms is a geometry collection parameter.
 
 Geometry collection parameters are data sources found in the Grasshopper ribbon under “Params”-> “Geometry”. They can store information about new geometry or references to existing Rhino geometry. Each geometry collection parameter can store data for its type of geometry (e.g. point, line, circle, etc.).
 
