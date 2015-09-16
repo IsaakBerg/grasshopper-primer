@@ -16,6 +16,8 @@ Geometry collection parameters are data sources found in the Grasshopper ribbon 
 
 When the user chooses to add to a geometry collection, Grasshopper prompts the user to use Rhino to specify a geometry item.  The user may choose to include one or more existing Rhino geometry items in the collection by reference. In this discussion, “referenced" data refer to these. The data from these items changes if edited in the Rhino document. The user may also add items by picking coordinates that do not correspond to existing Rhino objects. This effectively defines new geometry whose data originates in Grasshopper. The Grasshopper definition stores this geometry data set, which we refer to here as “picked”. The data for picked items is edit-able in Grasshopper.
 
+Manual picked data edits are possible by right-clicking the geometry collection parameter. Choosing the “Manage collection” menu item opens a dialog. In the dialog, picked data values become editable via a double-click. To edit picked data using the mouse, manipulate Grasshopper's gumball interface. (See 1.1.3.3.)
+
 Referenced and picked data alike act as input sources to the Grasshopper definition. The Grasshopper definition acts on the combined source data to produce calculated geometrical items.  The Grasshopper definition stores the instructions for calculating results from the source data. It does not store the calculated geometrical results themselves. 
 
 
@@ -51,7 +53,7 @@ Grasshopper's gumball widget appears by a picked data item's preview under two c
 
 ####*Updates to picked elements using these Grasshopper gumballs are live. Updates to any dependent calculated geometry will occur even as you manipulate the gumball.*
 
-In summary, Grasshopper-gumballs appear in Rhino for neither referenced geometry nor calculated geometry. Grasshopper-gumballs just appear in Rhino for selected, picked geometry. Each picked geometry selected in Grasshopper will display an associated Grasshopper gumball in Rhino. Grasshopper gumballs can directly manipulate the picked data via mouse movements. Manual picked data edits are possible by right-clicking the geometry collection parameter. Choosing the “Manage collection” menu item opens a dialog. In the dialog, picked data values become edit-able via a double-click.
+In summary, Grasshopper-gumballs appear in Rhino for neither referenced geometry nor calculated geometry. Grasshopper-gumballs just appear in Rhino for selected, picked geometry. Each picked geometry selected in Grasshopper will display an associated Grasshopper gumball in Rhino. Grasshopper gumballs can directly manipulate the picked data via mouse movements. 
 
 Grasshopper's gumball settings do not govern the Rhino gumballs associated with existing Rhino geometry. Likewise, Rhino gumball settings do not affect gumballs associated with picked objects.  When Rhino has the focus, Rhino gumballs can manipulate existing Rhino geometry objects. Rhino gumballs manipulate Rhino data in Rhino. The Rhino user interface specifies whether Rhino gumballs should appear while it is active. 
 
