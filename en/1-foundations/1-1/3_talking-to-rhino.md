@@ -9,10 +9,18 @@ rules and instructions for how Rhino can automate tasks.
 2. Rhino view-ports.
 3. Grasshopper Application window.
 
+###Data Sources
+One of the main ways to get data into the Grasshopper definition is to use a geometry collection parameter.
+
+Geometry collection parameters are data sources found in the Grasshopper ribbon under “Params”-> “Geometry”. They can store information about new geometry or references to existing Rhino geometry. Each geometry collection parameter can store data for its type of geometry (e.g. point, line, circle, etc.).
+
+When the user chooses to add to a geometry collection, Grasshopper prompts the user to use Rhino to specify a geometry item.  The user may choose to include one or more existing Rhino geometry items in the collection by reference. In this discussion, “referenced" data refer to these. The data from these items changes if edited in the Rhino document. The user may also add items by picking coordinates that do not correspond to existing Rhino objects. This effectively defines new geometry whose data originates in Grasshopper. The Grasshopper definition stores this geometry data set, which we refer to here as “picked”. The data for picked items is edit-able in Grasshopper.
+
+Referenced and picked data alike act as input sources to the Grasshopper definition. The Grasshopper definition acts on the combined source data to produce calculated geometrical items.  The Grasshopper definition stores the instructions for calculating results from the source data. It does not store the calculated geometrical results themselves. 
 
 
 ####1.1.3.1. VIEW-PORT FEEDBACK
-All geometry generated using the Grasshopper components shows up in the Rhino view-port by default. This preview is just an Open GL approximation of the actual geometry. You will not be able to select the geometry in the Rhino view-port until you have “baked” it into the scene. You can turn the geometry preview on/off by right-clicking on a component and selecting the Preview toggle. The geometry in the view-port is color-coded to provide visual feedback. The image below outlines the default color scheme.
+Referenced, picked, and calculated geometry can all be part of the Grasshopper generated preview. All geometry generated using the Grasshopper components shows up in the Rhino view-port by default. This preview is just an image that approximates actual geometry. You will not be able to select the geometry in the Rhino view-port until you have “baked” it into the scene. You can turn the geometry preview on/off by right-clicking on a component and selecting the Preview toggle. The geometry in the view-port is color-coded to provide visual feedback. The image below outlines the default color scheme.
 
 >Note: This is the default color scheme.  You can edit it using the Document Preview Settings dialog. That dialog is accessible in Grasshopper through a button on the canvas toolbar. It also opens after invoking “Preview Settings...” on the “Display” menu.
 
@@ -32,19 +40,20 @@ Grasshopper is a dynamic environment. Changes made to input parameters are live 
 
 
 ####1.1.3.3. GUMBALL WIDGET
-Some Grasshopper preview items can display gum-balls. To know which ones, it helps to distinguish referenced Rhino data from picked Grasshopper data.
 
-Specifying either picked-objects or referenced-objects starts in the Grasshopper interface. When the user chooses to add to a geometry collection, Grasshopper prompts the user to use Rhino to specify a geometry item.  It lets the user include one or more existing Rhino objects in the collection by reference. In this discussion, “referenced data” refer to these. Grasshopper also allows the user to add items by dynamically picking new coordinates as a set of raw geometry data. The Grasshopper definition stores this geometry data set, which we call here “picked data”. 
+In Rhino, gum-ball widgets enable mouse manipulations of geometry position, size and orientation. Rhino's gum-ball widgets manipulate existing Rhino geometry stored in its file. They do not work on geometry in Grasshopper's preview output. Such preview geometry does not comprise data actually stored in a Rhino document until the user bakes it.
 
-Referenced and picked data alike act as input sources to the Grasshopper definition. The Grasshopper definition acts on the combined source data to produce calculated geometrical objects.  The Grasshopper definition stores the instructions for calculated results from the source data. It does not store the calculated geometrical results themselves.
+Still, some Grasshopper preview items can display their own gum-balls in Rhino. To know which ones, let us distinguish referenced Rhino data from picked Grasshopper data.
 
-In Rhino, gum-ball widgets enable mouse manipulations of geometry position, size and orientation. Rhino's gum-ball widgets manipulate existing Rhino geometry stored in its file. Similarly, Grasshopper's gumball widgets allow mouse-manipulation of data stored directly in Grasshopper.  Thus, Grasshopper's gumball widgets appear under two conditions. The Grasshopper “Gumballs” display toggle must rest in its highlighted, enabled state. This display toggle appears under the “Display” menu in Grasshopper. The geometry selected in Grasshopper must include at least one picked data-set. 
+Rhino's gumball widgets allow mouse-manipulation of the referenced data stored in Rhino. Grasshopper's gumball widgets allow mouse-manipulation of the picked data stored directly in Grasshopper. Calculated results never display gumballs because they represent outputs, not inputs.
 
-Gumball widgets in Grasshopper appear for “picked data” alone. Each picked geometry selected in Grasshopper will display an associated Grasshopper gumball in Rhino. Grasshopper gumballs can directly manipulate the picked data via mouse movements.
+Grasshopper's gumball widget appears by a picked data item's preview under two conditions. The Grasshopper “Gumballs” display toggle must be in its highlighted, enabled state. This display toggle appears under the “Display” menu in Grasshopper. Also in Grasshopper, the user must select the parameter storing the picked data.
 
 ####*Updates to picked elements using these Grasshopper gumballs are live. Updates to any dependent calculated geometry will occur even as you manipulate the gumball.*
 
-Grasshopper's gumball settings do not govern the Rhino gumballs associated with existing Rhino geometry. Likewise, Rhino gumball settings do not affect gumballs associated with picked objects.
+In summary, Grasshopper-gumballs appear in Rhino for neither referenced geometry nor calculated geometry. Grasshopper-gumballs just appear in Rhino for selected, picked geometry. Each picked geometry selected in Grasshopper will display an associated Grasshopper gumball in Rhino. Grasshopper gumballs can directly manipulate the picked data via mouse movements. Manual picked data edits are possible by right-clicking the geometry collection parameter. Choosing the “Manage collection” menu item opens a dialog. In the dialog, picked data values become edit-able via a double-click.
+
+Grasshopper's gumball settings do not govern the Rhino gumballs associated with existing Rhino geometry. Likewise, Rhino gumball settings do not affect gumballs associated with picked objects.  When Rhino has the focus, Rhino gumballs can manipulate existing Rhino geometry objects. Rhino gumballs manipulate Rhino data in Rhino. The Rhino user interface specifies whether Rhino gumballs should appear while it is active. 
 
 ![IMAGE](images/1-1-3/1-1-3_004-gumball.png)
 
