@@ -18,7 +18,7 @@ When the user chooses to add to a geometry collection, Grasshopper prompts the u
 
 Manual picked data edits are possible by right-clicking the geometry collection parameter. Choosing the “Manage collection” menu item opens a dialog. In the dialog, picked data values become editable via a double-click. To edit picked data using the mouse, manipulate Grasshopper's gumball interface. (See 1.1.3.3.)
 
-Referenced and picked data alike act as input sources to the Grasshopper definition. The Grasshopper definition acts on the combined source data to produce calculated geometrical items.  The Grasshopper definition stores the instructions for calculating results from the source data. It does not store the calculated geometrical results themselves. 
+Referenced and picked data alike act as input sources to the Grasshopper definition. The Grasshopper definition acts on the combined source data to produce calculated geometrical items.  The Grasshopper definition stores the instructions for calculating results from the source data. Grasshopper does not store the calculated geometrical results, but it re-calculates them continually. To turn off this behavior, one can disable the solver under Grasshopper's “Solution” menu. The solver is enabled by default.
 
 
 ####1.1.3.1. VIEW-PORT FEEDBACK
