@@ -43,7 +43,7 @@ Grasshopper is a dynamic environment. Changes made to input parameters are live 
 
 In Rhino, gum-ball widgets enable mouse manipulations of geometry position, size and orientation. Rhino's gum-ball widgets manipulate existing Rhino geometry stored in its file. They do not work on geometry in Grasshopper's preview output. Such preview geometry does not comprise data actually stored in a Rhino document until the user bakes it.
 
-Still, some Grasshopper preview items can display their own gum-balls in Rhino. To know which ones, please distinguish referenced data from picked data.  1.1.3.0.5 Data Sources explains the difference in detail. Referenced data points to existing geometry in an existing Rhino drawing and it is stored in Rhino.  Picked data describes arbitrary geometry, and it is stored in Grasshopper.
+Still, some Grasshopper preview items can display their own gum-balls in Rhino. To know which ones, please distinguish referenced data from picked data.  As mentioned in 1.1.3.0.5, referenced data points to existing geometry in an existing Rhino drawing and it is stored in Rhino.  Picked data describes arbitrary geometry, and it is stored in Grasshopper.
 
 Rhino's gumball widgets allow mouse-manipulation of the referenced data stored in Rhino. Grasshopper's gumball widgets allow mouse-manipulation of the picked data stored directly in Grasshopper. Calculated results never display gumballs because it represents the results, not inputs. The results are not under direct user control. Instead, they are affected by changes to the inputs or the algorithms.
 
