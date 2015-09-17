@@ -9,8 +9,8 @@ rules and instructions for how Rhino can automate tasks.  If the tasks incorpora
 2. Rhino view-ports.
 3. Grasshopper Application window.
 
-###Data Sources
-Geometry collection parameters can help pass information about existing geometry from Rhino to Grasshopper. Think of these parameters as data sources. Find them in the Grasshopper ribbon under “Params”-> “Geometry”. They can store information about new geometry and-or references to existing Rhino geometry. Each geometry collection parameter can store data for its type of geometry (e.g. point, line, circle, etc.). When first placed on the canvas a collection parameter is empty.  It becomes useful after the user specifies which data to add to it. *Note: depending on the algorithms wired to the parameter, the order in which data is added may also make a difference to the outcome.*
+###1.1.3.0.5 Data Sources
+Geometry collection parameters can help pass information about existing geometry from Rhino to Grasshopper. Think of these parameters as data sources. Find them in the Grasshopper ribbon under “Params”-> “Geometry”. They can store information about new geometry and-or references to existing Rhino geometry. Each geometry collection parameter can store data for its type of geometry (e.g. point, line, circle, etc.). When first placed on the canvas a collection parameter is empty.  The user must specify data to add to this collection. Placing data into the collection in an unexpected arrangement may lead to unintended results. The algorithm author should document which data to provide as inputs, and in what order.
 
 When the user chooses to add to a geometry collection, Grasshopper prompts the user to use Rhino to specify a geometry item.  The user may choose to include one or more existing Rhino geometry items in the collection by reference. In this discussion, “referenced" data refer to these. The data from these items changes if edited in the Rhino document. The user may also add items by picking coordinates that do not correspond to existing Rhino objects. This effectively defines new geometry whose data originates in Grasshopper. The Grasshopper definition stores this geometry data set, which we refer to here as “picked”. The data for picked items is edit-able in Grasshopper.
 
@@ -43,9 +43,9 @@ Grasshopper is a dynamic environment. Changes made to input parameters are live 
 
 In Rhino, gum-ball widgets enable mouse manipulations of geometry position, size and orientation. Rhino's gum-ball widgets manipulate existing Rhino geometry stored in its file. They do not work on geometry in Grasshopper's preview output. Such preview geometry does not comprise data actually stored in a Rhino document until the user bakes it.
 
-Still, some Grasshopper preview items can display their own gum-balls in Rhino. To know which ones, let us distinguish referenced Rhino data from picked Grasshopper data.
+Still, some Grasshopper preview items can display their own gum-balls in Rhino. To know which ones, please distinguish referenced data from picked data.  1.1.3.0.5 Data Sources explains the difference in detail. Referenced data points to existing geometry in an existing Rhino drawing and it is stored in Rhino.  Picked data describes arbitrary geometry, and it is stored in Grasshopper.
 
-Rhino's gumball widgets allow mouse-manipulation of the referenced data stored in Rhino. Grasshopper's gumball widgets allow mouse-manipulation of the picked data stored directly in Grasshopper. Calculated results never display gumballs because they represent outputs, not inputs.
+Rhino's gumball widgets allow mouse-manipulation of the referenced data stored in Rhino. Grasshopper's gumball widgets allow mouse-manipulation of the picked data stored directly in Grasshopper. Calculated results never display gumballs because it represents the results, not inputs. The results are not under direct user control. Instead, they are affected by changes to the inputs or the algorithms.
 
 Grasshopper's gumball widget appears by a picked data item's preview under two conditions. The Grasshopper “Gumballs” display toggle must be in its highlighted, enabled state. This display toggle appears under the “Display” menu in Grasshopper. Also in Grasshopper, the user must select the parameter storing the picked data.
 
