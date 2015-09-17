@@ -43,13 +43,13 @@ Grasshopper is a dynamic environment. Changes made to input parameters are live 
 
 In Rhino, gum-ball widgets enable mouse manipulations of geometry position, size and orientation. Rhino's gum-ball widgets manipulate existing Rhino geometry stored in its file. They do not work on geometry in Grasshopper's preview output. Such preview geometry does not comprise data actually stored in a Rhino document until the user bakes it.
 
-Still, some Grasshopper preview items can display their own gum-balls in Rhino. To know which ones, please distinguish referenced data from picked data.  As mentioned in 1.1.3.0.5, referenced data points to existing geometry in an existing Rhino drawing and it is stored in Rhino.  Picked data describes arbitrary geometry, and it is stored in Grasshopper.
+Still, some Grasshopper preview items can display their own gum-balls in Rhino. To know which ones, please distinguish referenced data from picked data.  As mentioned in 1.1.3.0.5,referenced data points to existing geometry in an existing Rhino drawing and it is stored in Rhino.  Picked data describes arbitrary geometry, and it is stored in Grasshopper.
 
 Rhino's gumball widgets allow mouse-manipulation of the referenced data stored in Rhino. Grasshopper's gumball widgets allow mouse-manipulation of the picked data stored directly in Grasshopper. Calculated results never display gumballs because it represents the results, not inputs. The results are not under direct user control. Instead, they are affected by changes to the inputs or the algorithms.
 
 Grasshopper's gumball widget appears by a picked data item's preview under two conditions. The Grasshopper “Gumballs” display toggle must be in its highlighted, enabled state. This display toggle appears under the “Display” menu in Grasshopper. Also in Grasshopper, the user must select the parameter storing the picked data.
 
-####*Updates to picked elements using these Grasshopper gumballs are live. Updates to any dependent calculated geometry will occur even as you manipulate the gumball.*
+####*Updates to picked elements using these Grasshopper gumballs are live. Updates to any dependent calculated geometry will occur even while you manipulate the gumball.*
 
 In summary, Grasshopper-gumballs appear in Rhino for neither referenced geometry nor calculated geometry. Grasshopper-gumballs just appear in Rhino for selected, picked geometry. Each picked geometry selected in Grasshopper will display an associated Grasshopper gumball in Rhino. Grasshopper gumballs can directly manipulate the picked data via mouse movements. 
 
