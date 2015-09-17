@@ -45,7 +45,7 @@ In Rhino, gum-ball widgets enable mouse manipulations of geometry position, size
 
 Still, some Grasshopper preview items can display their own gum-balls in Rhino. To know which ones, please distinguish referenced data from picked data.  As mentioned in 1.1.3.0.5,referenced data points to existing geometry in an existing Rhino drawing and it is stored in Rhino.  Picked data describes arbitrary geometry, and it is stored in Grasshopper.
 
-Rhino's gumball widgets allow mouse-manipulation of the referenced data stored in Rhino. Grasshopper's gumball widgets allow mouse-manipulation of the picked data stored directly in Grasshopper. Calculated results never display gumballs because they are not inputs under direct user control. Instead, they are affected indirectly by changes to the inputs or the algorithms.
+Rhino's gumball widgets allow mouse-manipulation of the referenced data stored in Rhino. Grasshopper's gumball widgets allow mouse-manipulation of the picked data stored directly in Grasshopper. Calculated results never display gumballs because they are not inputs under direct user control. Changes to the inputs or the algorithms acting upon them are necessary to affect the results.
 
 Grasshopper's gumball widget appears by a picked data item's preview under two conditions. The Grasshopper “Gumballs” display toggle must be in its highlighted, enabled state. This display toggle appears under the “Display” menu in Grasshopper. Also in Grasshopper, the user must select the parameter storing the picked data.
 
@@ -121,7 +121,7 @@ Grasshopper and Rhino files in the same folder, and giving them related names.
 
 
 ####1.1.3.8. TEMPLATES
-Creating and specifying a template file in your Grasshopper preferences is
+Creating and specifying a template file in your Grasshopper preferences is a
 convenient way to set up every new Grasshopper definition you create. The
 template can include Grasshopper components as well as panels and sketch
 objects for labeling.
@@ -131,6 +131,5 @@ objects for labeling.
 >Create a template file and save it
 
 ![IMAGE](images/1-1-3/1-1-3_011-templates2.png)
->1. In File/Preferences, load the file you just created under Template File.
-Your template will serve as the starting point each time you create a new file.
+>1. In File/Preferences, place the path to the file you just created in the “Template File” field. Your template will serve as the starting point each time you create a new file.
 
