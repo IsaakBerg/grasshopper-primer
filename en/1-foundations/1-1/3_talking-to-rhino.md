@@ -2,7 +2,7 @@
 
 Unlike a Rhino document, a Grasshopper definition does not contain any actual
 objects or geometry. Instead, a Grasshopper definition represents a set of
-rules and instructions for how Rhino can automate tasks.
+rules and instructions for how Rhino can automate tasks.  If the tasks incorporate existing geometry, information must first pass from Rhino to Grasshopper.
 
 ![IMAGE](images/1-1-3/1-1-3_001-talking-to-rhino.png)
 >1. Grasshopper preview geometry.
@@ -10,9 +10,7 @@ rules and instructions for how Rhino can automate tasks.
 3. Grasshopper Application window.
 
 ###Data Sources
-It is helpful to pass data to a Grasshopper file so it can carry out the instructions and automation defined by its wiring. One of the main data-transfer mechanisms is a geometry collection parameter.
-
-Geometry collection parameters are data sources found in the Grasshopper ribbon under “Params”-> “Geometry”. They can store information about new geometry or references to existing Rhino geometry. Each geometry collection parameter can store data for its type of geometry (e.g. point, line, circle, etc.).
+Geometry collection parameters can help pass information about existing geometry from Rhino to Grasshopper. Think of these parameters as data sources. Find them in the Grasshopper ribbon under “Params”-> “Geometry”. They can store information about new geometry and-or references to existing Rhino geometry. Each geometry collection parameter can store data for its type of geometry (e.g. point, line, circle, etc.). When first placed on the canvas a collection parameter is empty.  It becomes useful after the user specifies which data to add to it. *Depending on the algorithms wired to the parameter, the order in which data is added may make a difference to the outcome.*
 
 When the user chooses to add to a geometry collection, Grasshopper prompts the user to use Rhino to specify a geometry item.  The user may choose to include one or more existing Rhino geometry items in the collection by reference. In this discussion, “referenced" data refer to these. The data from these items changes if edited in the Rhino document. The user may also add items by picking coordinates that do not correspond to existing Rhino objects. This effectively defines new geometry whose data originates in Grasshopper. The Grasshopper definition stores this geometry data set, which we refer to here as “picked”. The data for picked items is edit-able in Grasshopper.
 
