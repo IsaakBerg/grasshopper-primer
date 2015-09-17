@@ -36,7 +36,7 @@ Referenced, picked, and calculated geometry can all be part of the Grasshopper g
 Grasshopper is a dynamic environment. Changes made to input parameters are live and their preview displays update in the Rhino view-port as soon as possible.
 
 ![IMAGE](images/1-1-3/1-1-3_003-live-wires.png)
-
+>Snapshots of a dynamic change of a circle's radius, separated by mere moments
 
 
 ####1.1.3.3. GRASSHOPPER'S GUMBALL WIDGET
@@ -55,7 +55,7 @@ In summary, Grasshopper-gumballs appear in Rhino for neither referenced geometry
 
 When Rhino has the focus, Rhino gumballs can manipulate existing Rhino geometry objects. Rhino gumballs manipulate Rhino data in Rhino. The Rhino user interface specifies whether Rhino gumballs should appear while it is active. Grasshopper's gumball settings control whether Grasshopper  gumballs appear after selecting picked data in Grasshopper. Rhino's gumball settings control whether Rhino gumballs appear when a Rhino object is selected in Rhino. Grasshopper's gumball settings do not govern the Rhino gumballs associated with existing Rhino geometry. Likewise, Rhino gumball settings do not affect gumballs associated with picked objects. 
 
-![IMAGE](images/1-1-3/1-1-3_004-gumball.png)
+![IMAGE](images/1-1-3/1-1-3_004-gumball.png) 
 
 
 
