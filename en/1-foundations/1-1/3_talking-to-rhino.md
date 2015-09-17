@@ -53,10 +53,10 @@ Grasshopper's gumball widget appears by a picked data item's preview under two c
 
 In summary, Grasshopper-gumballs appear in Rhino for neither referenced geometry nor calculated geometry. Grasshopper-gumballs just appear in Rhino for selected, picked geometry. Each picked geometry selected in Grasshopper will display an associated Grasshopper gumball in Rhino. Grasshopper gumballs can directly manipulate the picked data via mouse movements. 
 
-When Rhino has the focus, Rhino gumballs can manipulate existing Rhino geometry objects. Rhino gumballs manipulate Rhino data in Rhino. The Rhino user interface specifies whether Rhino gumballs should appear while it is active. Grasshopper's gumball settings control whether Grasshopper  gumballs appear after selecting picked data in Grasshopper. Rhino's gumball settings control whether Rhino gumballs appear when a Rhino object is selected in Rhino. Grasshopper's gumball settings do not govern the Rhino gumballs associated with existing Rhino geometry. Likewise, Rhino gumball settings do not affect gumballs associated with picked objects. 
+When Rhino has the focus, Rhino gumballs can manipulate existing Rhino geometry objects. Rhino gumballs manipulate Rhino data in Rhino. The Rhino user interface specifies whether Rhino gumballs should appear while it is active. Grasshopper's gumball settings control whether Grasshopper  gumballs appear after selecting picked data in Grasshopper. Rhino's gumball settings control whether Rhino gumballs appear after selecting an object in Rhino. Grasshopper's gumball settings do not govern the Rhino gumballs associated with existing Rhino geometry. Likewise, Rhino gumball settings do not affect gumballs associated with picked objects. 
 
-![IMAGE](images/1-1-3/1-1-3_004-gumball.png) 
-
+![IMAGE](images/1-1-3/1-1-3_004-gumball.png)
+> Grasshopper Gumballs shown for picked geometry stored in Grasshopper, as displayed in Rhino's preview. Read this section for necessary conditions.
 
 
 ####1.1.3.4. BAKING GEOMETRY
