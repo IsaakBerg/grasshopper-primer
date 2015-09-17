@@ -64,8 +64,8 @@ To work with (e.g. select, edit, transform, etc.) Grasshopper's preview from Rhi
 
 ![IMAGE](images/1-1-3/1-1-3_005-baking.png)
 >1. Bake by right-clicking a component and selecting Bake.
-2. A dialog will appear that allows you to select onto which Rhino layer the
-geometry will bake.
+2. A dialog will appear that allows you to select which Rhino layer the
+geometry will bake to.
 3. Grouping your baked geometry is a convenient way to manage the instantiated
 Rhino geometry. This is helpful when creating more than one object with Grasshopper.
 
