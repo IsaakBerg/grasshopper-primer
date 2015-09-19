@@ -9,9 +9,10 @@ Geometry parameters can reference geometry from Rhino, or inherit geometry from 
 
 ![IMAGE](images/1-2-1/1-2-1_001-geometry-parameters.png)
 
-Input parameters are dynamic interface objects that allow you to interact with your definition. The number slider and the graph mapper are both input parameters.
+Input parameters are dynamic interface objects that allow you to interact with your definition. 
 
 ![IMAGE](images/1-2-1/1-2-1_002-input-parameters.png)
+>The number slider and the graph mapper are examples of input parameters.
 
 ####1.2.1.2. COMPONENTS
 Components perform actions based on the inputs they receive. There are different components for different tasks.
