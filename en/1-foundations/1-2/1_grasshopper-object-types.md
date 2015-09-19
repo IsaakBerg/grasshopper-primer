@@ -27,15 +27,16 @@ segments.
 ####1.2.1.3. OBJECT COLORS
 We can glean some information about the state of each object based on their color. Let’s take a look at Grasshopper’s default color coding system.
 
-A parameter which contains neither warnings nor errors is shown in light
-gray. This color object indicates that everything is working properly with this
-parameter.
+The color of a parameter which contains neither warnings nor errors is light
+gray. This color indicates that everything is working properly with the parameter.
 
-A parameter which contains warnings is displayed as an orange box. Any object which fails to collect data is considered suspect in a Grasshopper definition since it is not contributing to the solution.. Therefore, all parameters (when freshly added) are orange, to indicate they do not contain any data and have thus no functional effect on the outcome of the solution. By default, parameters and components that are orange also have a small balloon at the upper right hand corner of the object. If you hover your mouse over this balloon, it will reveal information about why the component is giving you a warning. Once a parameter inherits or defines data, it will become grey and the baloon will disappear.
+The color of a parameter which contains warnings is orange. An orange-colored parameter object is not able to send data. Failing to send data would result in a warning because the parameter is not yet contributing to the solution. 
+The user can resolve this problem by wiring data to its input or configuring data for it to hold in its internal storage. A parameter can either store references to existing Rhino data or new data “picked” fresh for use in Grasshopper. All freshly added parameters appear orange until they have data to send.
 
 ![IMAGE](images/1-2-1/1-2-1_004-parameter-warning.png)
+>By default, orange objects have a small balloon appear at their upper right hand corner. If you hover your mouse over this balloon, it will reveal information about why the object is giving you a warning. When the user resolves the problem, the object's color will return to gray and the balloon will disappear.
 
-A component is always a more involved object, since we have to understand and then coordinate what its inputs and outputs are. Like parameters, a component with warnings is displayed as orange. Remember, warnings aren’t necessarily bad, it usually just means that Grasshopper is alerting you to a potential problem in your definition.
+A component is always a more involved object, since we have to understand and then coordinate what its inputs and outputs are. Like parameters, a component with warnings is displayed as orange. Remember, warnings aren’t necessarily bad. They usually just mean Grasshopper is alerting you to a potential problem in your definition.
 
 ![IMAGE](images/1-2-1/1-2-1_005-component-warning.png)
 
@@ -52,7 +53,7 @@ A component which has been selected will be shown in a light green color. If the
 A component which contains at least 1 error is displayed in red. The error can come either from the component itself or from one of its inputs or outputs.
 
 ![IMAGE](images/1-2-1/1-2-1_006-object-colors.png)
->1. A parameter with no warnings or erros
+>1. A parameter with no warnings or errors
 2. A parameter with warnings
 3. A component with warnings
 4. A component with no warnings or errors
