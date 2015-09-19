@@ -36,7 +36,7 @@ The color of a parameter which contains warnings is orange. An orange-colored pa
 The user can resolve this problem by wiring data to its input or configuring data for it to hold in its internal storage. A parameter can either store references to existing Rhino data or new data “picked” fresh for use in Grasshopper. All freshly added parameters appear orange until they have data to send.
 
 ![IMAGE](images/1-2-1/1-2-1_004-parameter-warning.png)
->By default, orange objects have a small balloon appear at their upper right hand corner. If you hover your mouse over this balloon, it will reveal information about why the object is giving you a warning. When the user resolves the problem, the object's color will return to gray and the balloon will disappear.
+>By default, orange or red objects have a small balloon appear at their upper right hand corner. If you hover your mouse over this balloon, it will reveal information about why the object is giving you a warning. When the user resolves the problem, the object's color will return to gray and the balloon will disappear.
 
 A component is a more involved object, since we have to understand and then coordinate what its inputs and outputs are. Like orange-colored parameters, an orange-colored component indicates a warning. Warnings aren’t necessarily bad. Often, they just mean that Grasshopper is alerting you to a potential problem in your definition.
 
@@ -49,7 +49,7 @@ A component with a dull gray color is in a disabled state. Disabled components s
 A light green colored object indicates it is part of the current selection. Its geometry in the Rhino scene receives the same color for extra visual feedback.
 
 Red components communicate one or more error conditions. The errors can either originate in the component itself or one of its inputs or outputs.
-Its geometry in Rhino will not be visible until the user fixes the problem.
+Its geometry in Rhino will not be visible until you fix the problem.
 
 ![IMAGE](images/1-2-1/1-2-1_006-object-colors.png)
 >1. A parameter with no warnings or errors
