@@ -5,9 +5,10 @@
 ####1.2.1.1. PARAMETERS
 Parameters act as input valves for the flow of the data that can pass through the graph of a definition.  This data may include numbers, colors, geometry and more. Parameters look like small rectangular boxes with a single input, a single output, and an icon. We also know that these are parameters because of the shape of their icon. All parameter objects exhibit icons with a hexagonal border.
 
-Geometry parameters can reference geometry from Rhino, or inherit geometry from other components. The point and curve objects are both geometry parameters.
+Geometry parameters can reference geometry from Rhino, or inherit geometry from other components. 
 
 ![IMAGE](images/1-2-1/1-2-1_001-geometry-parameters.png)
+>The point and curve collections are examples of geometry parameters.
 
 Input parameters are dynamic interface objects that allow you to interact with your definition. 
 
