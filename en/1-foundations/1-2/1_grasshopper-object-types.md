@@ -5,7 +5,7 @@
 ####1.2.1.1. PARAMETERS
 Parameters act as input valves for the flow of the data that can pass through the graph of a definition.  This data may include numbers, colors, geometry and more. Parameters look like small rectangular boxes with a single input, a single output, and an icon. We also know that these are parameters because of the shape of their icon. All parameter objects exhibit icons with a hexagonal border.
 
-Geometry parameters can reference geometry from Rhino, or inherit geometry from other components. Each parameter contains a collection including zero or more values of the corresponding type.
+Geometry parameters can reference geometry from Rhino, or inherit geometry from other components. Each parameter can contain a collection that includes zero or more values of the corresponding type.  With data wired to its input it merely passes on that data to the output.
 
 ![IMAGE](images/1-2-1/1-2-1_001-geometry-parameters.png)
 >The point and curve collections are examples of geometry parameters.
@@ -49,6 +49,7 @@ A component with a dull gray color is in a disabled state. Disabled components s
 A light green colored object indicates it is part of the current selection. Its geometry in the Rhino scene receives the same color for extra visual feedback.
 
 Red components communicate one or more error conditions. The errors can either originate in the component itself or one of its inputs or outputs.
+Its geometry in Rhino will not be visible until the user fixes the problem.
 
 ![IMAGE](images/1-2-1/1-2-1_006-object-colors.png)
 >1. A parameter with no warnings or errors
