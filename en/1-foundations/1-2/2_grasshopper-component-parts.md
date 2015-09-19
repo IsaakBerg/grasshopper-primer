@@ -1,21 +1,21 @@
 ### 1.2.2. GRASSHOPPER COMPONENT PARTS
 
-#####Components are the objects you place on the canvas and connect together with Wiresto form a visual program. Components can represent Rhino Geometry or operationslike Math Functions. Components have inputs and outputs.
+#####Components are the objects you place on the canvas and connect together with wires to form a visual program. Components can represent Rhino Geometry or operations such as Math Functions. Components have inputs and outputs.
 
 ![IMAGE](images/1-2-2/1-2-2_001-component-parts.png)
 >1. The three input parameters of the Circle CNR component.
-2. The Circle CNR component area.
+2. The Circle CNR component's center area.
 3. The output parameter of the Circle CNR component.
 
-A component requires data in order to perform its actions, and it usually comes up with a result. That is why most components have a set of nested parameters, referred to as Inputs and Outputs, respectively. Input parameters are positioned along the left side, output parameters along the right side.
+A component requires data to perform its actions on, and yields a result. That is why most components have a set of nested parameters, referred to as Inputs and Outputs, respectively. Positioned along the left side are input parameters while on the right side are the output parameters.
 
-There are a few Grasshopper components that have inputs but no outputs, or vice versa. When a component doesn’t have inputs or outputs, it will have a jagged edge.
+Some Grasshopper components have inputs but no outputs, or vice versa. When a component has no inputs or outputs, it will have a jagged edge on the left or the right side, respectively.
 
 ![IMAGE](images/1-2-2/1-2-2_002-components-without-outputs.png)
 
 ####1.2.2.1. LABEL VS ICON DISPLAY
-Every Grasshopper object has a unique icon. These icons are displayed in
-the center area of the object and correspond to the icons displayed in the component palettes. Objects can also be displayed with text labels. To switch between icon and label display, Select “Draw Icons” from the display menu. You can also select “Draw Full Names” to display the full name of each object as well as its inputs and outputs.
+Every Grasshopper object has a unique icon. These icons appear in
+the center area of the object and correspond to the icons displayed in the component palettes. Objects can also display text labels. To switch between icon and label display, Select “Draw Icons” from the display menu. You can also select “Draw Full Names” to display the full name of each object as well as its inputs and outputs.
 
 ![IMAGE](images/1-2-2/1-2-2_003-label-icon-screenshot.png)
 >1. Switch between Icon and Label display.
@@ -27,7 +27,7 @@ the center area of the object and correspond to the icons displayed in the compo
 3. The Circle CNR component with full names displayed
 
 
-We reccommend using icon display to familiarize yourself with the component icons so you can quickly locate them in the palettes. This will also enable you to understand definitions at a glance. Text labels can be confusing because different components may share the same label.
+We recommend using icon display to familiarize yourself with the component icons. Familiarity with the icons shortens the time needed to locate components in the palettes. It also helps you understand definitions at a glance. Relying on text labels alone may be more confusing because different components may share the same label.
 
 ![IMAGE](images/1-2-2/1-2-2_005-circle-label-vs-icon.png)
 >Circle CNR and Circle 3pt have the same label, but different icons.
