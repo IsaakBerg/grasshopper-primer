@@ -1,6 +1,6 @@
 ## 1.2. ANATOMY OF A GRASSHOPPER DEFINTION
 
-####Grasshopper allows you to create visual programs called definitions. These definitions are made up of nodes connected by wires. The following chapter introduces Grasshopper objects and how to interact with them to start building definitions.
+####In Grasshopper, nodes connected by wires form visual programs called definitions. The following chapter introduces Grasshopper objects.  By interacting with Grasshopper objects, one can build definitions.
 
 ![IMAGE](images/1-2/1-2_001-anatomy-of-definition.png)
 
