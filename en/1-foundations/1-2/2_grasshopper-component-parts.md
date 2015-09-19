@@ -9,7 +9,7 @@
 
 A component requires data to perform its actions on, and yields a result. That is why most components have a set of nested parameters, referred to as Inputs and Outputs, respectively. Positioned along the left side are input parameters while on the right side are the output parameters.
 
-Some Grasshopper components have inputs but no outputs, or vice versa. When a component has no inputs or outputs, it will have a jagged edge on the left or the right side, respectively.
+Some Grasshopper components have inputs but no outputs, or vice versa. When a component has no inputs or no outputs, it will have a jagged edge on the left or the right side, respectively.
 
 ![IMAGE](images/1-2-2/1-2-2_002-components-without-outputs.png)
 
@@ -38,31 +38,31 @@ components in the palettes is holding down Ctrl + Alt and clicking on an existin
 ![IMAGE](images/1-2-2/1-2-2_006-reveal-location.png)
 
 ####1.2.2.2. COMPONENT HELP
-Right clicking an object and selecting “Help” from the drop-down menu will open a Grasshopper help window. The help window contains a more detailled description of the object, a list of inputs and outputs, as well as remarks.
+Right clicking an object and selecting “Help” from the drop-down menu will open a Grasshopper help window. The help window contains a more detailed description of the object, a list of its inputs and outputs, and remarks.
 
 ![IMAGE](images/1-2-2/1-2-2_007-component-help.png)
 >1. Grasshopper help window for the Point parameter
-2. The remarks in the help window give additional insight about the point parameter.
+2. The remarks in the help window provide insight on the point parameter.
 
 ####1.2.2.3. TOOL TIPS
-Component inputs are expecting to receive certain types of data, for example a Component might indicate that you should connect a point or plane to its input. When you hover your mouse over the individual parts of a Component object, you’ll see different tooltips that indicate the particular type of the sub-object currently under the mouse. Tooltips are quite informative since they tell you both the type and the data of individual parameters.
+Component inputs expect to receive certain types of data. For example a Component might show that you should connect a point or plane to its input. When you hover your mouse over the individual parts of a Component object, tool-tips appear.  Each tool-tip indicates the type of data expected by the sub-object under the mouse. Tool-tips also show the data values active at the individual parameters.
 
 ![IMAGE](images/1-2-2/1-2-2_008-tool-tips.png)
->1. Header of the tooltip shows the icon for the input type, the name of the Component, the label for the input, and the input type again in text format.
-2. The flain language description of what the input is for the Component.
+>1. Header of the tool-tip. Shows (from left-to-right):
+Type icon, name-of-Component.label-of-input, (Type name)
+2. The plain-language description of what the input is for the Component.
 3. Any values defined for the input - either locally or from its connected wire.
-4. The header of the output tooltip provides the same detail os for inputs, but for the corresponding output.
+4. Type icon, name-of-Component.label-of-output, (Type name)
 5. The result of the component's action.
 
-####1.2.2.4. CONTEXT POPUP MENUS
-All objects on the Canvas have their own context menus that expose their
-settings and details. You can access this context menu by right-clicking on the center area of each component. Inputs and outputs each have their own context menus which can be accessed by right-clicking them.
+####1.2.2.4. CONTEXT POP-UP MENUS
+All objects on the Canvas have their own context menus that expose their settings and details. You can access this context menu by right-clicking on the center area of each component. After right-clicking them, inputs and outputs also each reveal their own context menus.
 
 ![IMAGE](images/1-2-2/1-2-2_009-context-menus-a.png)
 >1. Component context menu.
 2. Editable text field that lists the name of the object.
-3. Preview flag - indicates whether or not the geometry produced by this object will be visible in the Rhino viewports. Switching off preview will speed up both the Rhino viewport frame-rate and the time taken for a solution.
-4. Runting warnings - lists warnings that are hindering the functioning of the component.
+3. Preview flag - indicates whether the geometry produced by this object will be visible in the Rhino view-ports. Switching off preview will speed up both the Rhino view-port frame-rate and the time taken for a solution.
+4. Run-time warnings - lists warnings that are hindering the functioning of the component.
 
 ![IMAGE](images/1-2-2/1-2-2_010-context-menus-b.png)
 >1. C input context menu.
