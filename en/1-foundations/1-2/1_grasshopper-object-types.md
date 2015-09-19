@@ -1,6 +1,6 @@
 ### 1.2.1. GRASSHOPPER OBJECT TYPES
 
-#####Grasshopper consists of two primary types of user objects: parameters andcomponents. Parameters store data, whereas components perform actions that resultin data. The most basic way to understand Grasshopper is to remember that we willuse data to define the inputs of actions (which will result in new data that we cancontinue to use).
+#####Grasshopper consists of two primary types of user objects: parameters and components. Parameters store data, whereas components perform actions that result in data. The most basic way to understand Grasshopper is to remember that we will use data to define the inputs of actions. In turn, the actions produce new data that we can use as inputs to later actions.
 
 ####1.2.1.1. PARAMETERS
 Parameters store the data - numbers, colors, geometry, and more - that we send through the graph in our definition. Parameters are container objects which are usually shown as small rectangular boxes with a single input and single output. We also know that these are parameters because of the shape of their icon. All parameter objects have a hexagonal border around their icon.
