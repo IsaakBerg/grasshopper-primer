@@ -27,8 +27,8 @@ segments.
 ####1.2.1.3. OBJECT COLORS
 We can glean some information about the state of each object based on their color. Let’s take a look at Grasshopper’s default color coding system.
 
-The color of a parameter which contains neither warnings nor errors is light
-gray. This color indicates that everything is working properly with the parameter.
+The color of a object which contains neither warnings nor errors is light
+gray. This color indicates that everything is working properly with the parameter or component.
 
 The color of a parameter which contains warnings is orange. An orange-colored parameter object is not able to send data. Failing to send data would result in a warning because the parameter is not yet contributing to the solution. 
 The user can resolve this problem by wiring data to its input or configuring data for it to hold in its internal storage. A parameter can either store references to existing Rhino data or new data “picked” fresh for use in Grasshopper. All freshly added parameters appear orange until they have data to send.
@@ -36,14 +36,11 @@ The user can resolve this problem by wiring data to its input or configuring dat
 ![IMAGE](images/1-2-1/1-2-1_004-parameter-warning.png)
 >By default, orange objects have a small balloon appear at their upper right hand corner. If you hover your mouse over this balloon, it will reveal information about why the object is giving you a warning. When the user resolves the problem, the object's color will return to gray and the balloon will disappear.
 
-A component is always a more involved object, since we have to understand and then coordinate what its inputs and outputs are. Like parameters, a component with warnings is displayed as orange. Remember, warnings aren’t necessarily bad. They usually just mean Grasshopper is alerting you to a potential problem in your definition.
+A component is a more involved object, since we have to understand and then coordinate what its inputs and outputs are. Like orange-colored parameters, an orange-colored component indicates a warning. Warnings aren’t necessarily bad. Often, they just mean that Grasshopper is alerting you to a potential problem in your definition.
 
 ![IMAGE](images/1-2-1/1-2-1_005-component-warning.png)
 
-A component which contains neither warnings nor errors is shown in light gray.
-
-A component whose preview has been disabled is shown in a slightly darker
-gray. There are two ways to disable a component’s preview. First, simply right-click on the component and toggle the preview button. To disable the preview for multiple components at the same time, first select the desired components and then toggle the disable preview icon (blindfolded man) by right clicking anywhere on the canvas.
+A component with a slightly darker gray color indicates a disabled state of its preview display. There are two ways to disable a component’s preview display. To disable component previews one-at-a-time, right-click on the component and toggle the preview button. To disable more than one component preview at a time, select the desired components. Right-click anywhere on the canvas to toggle the icon that looks like a blind-folded man.
 
 A component that has been disabled is shown in a dull gray. To disable a
 component you may right-click on the component and toggle the disable button, or you may select the desired components, right click anywhere on the canvas and select Disable. Disabled components stop sending data to downstream components.
