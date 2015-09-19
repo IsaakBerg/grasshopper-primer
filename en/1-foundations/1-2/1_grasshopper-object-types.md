@@ -3,7 +3,7 @@
 #####Grasshopper consists of two primary types of user objects: parameters and components. Parameters store data, whereas components perform actions that result in data. The most basic way to understand Grasshopper is to remember that we will use data to define the inputs of actions. In turn, the actions produce new data that we can use as inputs to later actions.
 
 ####1.2.1.1. PARAMETERS
-Parameters store the data - numbers, colors, geometry, and more - that we send through the graph in our definition. Parameters are container objects which are usually shown as small rectangular boxes with a single input and single output. We also know that these are parameters because of the shape of their icon. All parameter objects have a hexagonal border around their icon.
+Parameters act as input valves for the flow of the data that can pass through the graph of a definition.  This data may include numbers, colors, geometry and more. Parameters look like small rectangular boxes with a single input, a single output, and an icon. We also know that these are parameters because of the shape of their icon. All parameter objects exhibit icons with a hexagonal border.
 
 Geometry parameters can reference geometry from Rhino, or inherit geometry from other components. The point and curve objects are both geometry parameters.
 
@@ -14,14 +14,14 @@ Input parameters are dynamic interface objects that allow you to interact with y
 ![IMAGE](images/1-2-1/1-2-1_002-input-parameters.png)
 
 ####1.2.1.2. COMPONENTS
-Components perform actions based on the inputs they receive. There are manytypes of components for different tasks.
+Components perform actions based on the inputs they receive. There are different components for different tasks.
 
 ![IMAGE](images/1-2-1/1-2-1_003-components.png)
 
->1. The multiplication component is an operator that calculates the product of twonumbers.
+>1. The multiplication component is an operator that calculates the product of two numbers.
 2. The Divide component operates on geometry, dividing a curve into equal
 segments.
-3. The Circle CNR component constructs a circle geometry from input data; a center point, normal vector, and radius.
+3. The Circle CNR component constructs a circle geometry from input data. It accepts data specifying a center point, a normal vector, and a radius.
 4. The Loft component constructs a surface by lofting curves.
 
 ####1.2.1.3. OBJECT COLORS
