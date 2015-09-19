@@ -40,12 +40,11 @@ A component is a more involved object, since we have to understand and then coor
 
 ![IMAGE](images/1-2-1/1-2-1_005-component-warning.png)
 
-A component with a slightly darker gray color indicates a disabled state of its preview display. There are two ways to disable a component’s preview display. To disable component previews one-at-a-time, right-click on the component and toggle the preview button. To disable more than one component preview at a time, select the desired components. Right-click anywhere on the canvas to toggle the icon that looks like a blind-folded man.
+A component with a slightly darker gray color indicates a disabled state of its preview display. There are two ways to disable a component’s preview display. To disable component previews one-at-a-time, right-click on the component and toggle the preview button. To disable more than one component preview at a time, select the desired components. Right-click anywhere on the canvas then toggle the icon that looks like a blind-folded man.
 
-A component that has been disabled is shown in a dull gray. To disable a
-component you may right-click on the component and toggle the disable button, or you may select the desired components, right click anywhere on the canvas and select Disable. Disabled components stop sending data to downstream components.
+A component with a dull gray color is in a disabled state. Disabled components stop sending data to downstream components. To disable component previews one-at-a-time, right-click on the component and toggle the disable button. To disable more than one component at a time, select the desired components. Right-click anywhere on the canvas to select the Disable item.
 
-A component which has been selected will be shown in a light green color. If the selected component has generated some geometry within the Rhino scene, this will also turn green to give you some visual feedback.
+A light green colored object indicates it is part of the current selection. Its geometry in the Rhino scene receives the same color for extra visual feedback.
 
 A component which contains at least 1 error is displayed in red. The error can come either from the component itself or from one of its inputs or outputs.
 
