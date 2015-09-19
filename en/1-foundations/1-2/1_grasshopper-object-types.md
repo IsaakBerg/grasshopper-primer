@@ -46,7 +46,7 @@ A component with a dull gray color is in a disabled state. Disabled components s
 
 A light green colored object indicates it is part of the current selection. Its geometry in the Rhino scene receives the same color for extra visual feedback.
 
-A component which contains at least 1 error is displayed in red. The error can come either from the component itself or from one of its inputs or outputs.
+Red components communicate one or more error conditions. The errors can either originate in the component itself or one of its inputs or outputs.
 
 ![IMAGE](images/1-2-1/1-2-1_006-object-colors.png)
 >1. A parameter with no warnings or errors
@@ -54,6 +54,6 @@ A component which contains at least 1 error is displayed in red. The error can c
 3. A component with warnings
 4. A component with no warnings or errors
 5. A component with preview disabled
-6. A component that has been disabled
+6. A component in its disabled state
 7. A selected component
 8. A component with an error
