@@ -85,6 +85,6 @@ The panel component also has a zoom-able user interface. A Panel is like a Post-
 >1. Drag grips to adjust panel margins.
 2. Increase or reduce the font size of the panel content.
 3. Change the alignment of panel content.
-4. Select a font for panel conent.
+4. Select a font for panel content.
 5. Select a color for the panel background. You can set a new default color for your panels by right clicking the panel and selecting "Set Default Color".
 
