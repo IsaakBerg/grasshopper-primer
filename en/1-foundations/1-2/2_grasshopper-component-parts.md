@@ -79,12 +79,12 @@ Through the Zoom-able User Interface, some components allow more or fewer inputs
 1. Click the + sign to add an Input.
 2. Click the - sign to remove an Input.
 
-The panel component also has a zoomable user interface. A Panel is like a Post-It™ sticker. It allows you to add little remarks or explanations to a Document. You can change the text through the menu or by double-clicking the panel surface. Panels can also receive and display data from elsewhere. If you plug an output into a Panel, you can see the contents of that parameter in real-time. All data in Grasshopper can be viewed in this way. When you zoom in on a panel, a menu appears allowing you to change the background, font, and other attributes. These options are also available when you right-click the panel
+The panel component also has a zoom-able user interface. A Panel is like a Post-It™ sticker. It allows you to add little remarks or explanations to a Document. You can change the text through the menu or by double-clicking the panel surface. Panels can also receive and display data from elsewhere. If you plug an output into a Panel, you can see the contents of that parameter in real-time. This method works for viewing all data in Grasshopper. When you zoom in on a panel, a menu appears allowing you to change the background, font, and other attributes. These options are also available when you right-click the panel
 
 ![IMAGE](images/1-2-2/1-2-2_012-zoomable-panel.png)
 >1. Drag grips to adjust panel margins.
 2. Increase or reduce the font size of the panel content.
 3. Change the alignment of panel content.
-4. Select a font for ponel conent.
-5. Select a color for the panel background. You can set a new default color for your panels by right clicking the panel and selecting "Set Defaut Color".
+4. Select a font for panel conent.
+5. Select a color for the panel background. You can set a new default color for your panels by right clicking the panel and selecting "Set Default Color".
 
