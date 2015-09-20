@@ -61,21 +61,22 @@ All objects on the Canvas have their own context menus that expose their setting
 ![IMAGE](images/1-2-2/1-2-2_009-context-menus-a.png)
 >1. Component context menu.
 2. Editable text field that lists the name of the object.
-3. Preview flag - indicates whether the geometry produced by this object will be visible in the Rhino view-ports. Switching off preview will speed up both the Rhino view-port frame-rate and the time taken for a solution.
+3. Preview flag. Indicates whether geometry produced by this object will be visible in the Rhino view-ports. Switching off preview will speed up the Rhino view-port frame-rate and reduce the time needed for a solution.
 4. Run-time warnings - lists warnings that are hindering the functioning of the component.
 
 ![IMAGE](images/1-2-2/1-2-2_010-context-menus-b.png)
 >1. C input context menu.
-2. Set one or multiple points - allows you to select reference geometry in the Rhino viewport.
-3. Manage Point collection - opens a dialog that allows you to add or remove points from the point collection and view information about each point.
+2. Set one Point/Set Multiple Points - Allow you to select reference geometry in the Rhino view-port.
+3. Manage Point collection.  Opens a dialog that allows you to add or remove points from the point collection and view information about each point.
 4. Add item to collection.
 5. Delete selection.
 
-####1.2.2.5. ZOOMABLE USER INTERFACE
-Some components can be modified to increase the number of inputs or outputs through the Zoomable User Interface (ZUI). By zooming in on the component on the canvas, an additional set of options will appear which allows you add or remove Inputs or Outputs to that component. The Addition component allows you to add inputs, representing additional items for the addition operation.
+####1.2.2.5. ZOOM-ABLE USER INTERFACE (ZUI)
+Through the Zoom-able User Interface, some components allow more or fewer inputs or outputs. These components display icons for adding or removing Inputs or Outputs if viewed under high zoom. Operating the scroll wheel on the mouse zooms the display.
 
 ![IMAGE](images/1-2-2/1-2-2_011-zoomable-ui.png)
->1. Click the + sign to add an Input.
+>Zooming in on the Addition component allows you to add additional inputs for data to add.
+1. Click the + sign to add an Input.
 2. Click the - sign to remove an Input.
 
 The panel component also has a zoomable user interface. A Panel is like a Post-It™ sticker. It allows you to add little remarks or explanations to a Document. You can change the text through the menu or by double-clicking the panel surface. Panels can also receive and display data from elsewhere. If you plug an output into a Panel, you can see the contents of that parameter in real-time. All data in Grasshopper can be viewed in this way. When you zoom in on a panel, a menu appears allowing you to change the background, font, and other attributes. These options are also available when you right-click the panel
