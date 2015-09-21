@@ -8,7 +8,13 @@ When you drag-and-drop a Point Parameter from the Params/Geometry Panel onto the
 
 
 ####1.2.3.1. PERSISTENT DATA
-You access and manage persistent data through a parameter's context menu. Each parameter type shows a different manager. For example, a Point parameter allows you to set one or more points through its context menu. The context menu of the Point parameter offers two ways of setting persistent data: selecting a single point and or selecting multiple points. Right click on the parameter to access the context menu. If you click on either of these, the Grasshopper window will disappear. A prompt will ask you to pick a point in one of the Rhino view-ports.
+Access and manage persistent data through a parameter's context menu¹. 
+Each parameter type shows a different manager. For example, a Point parameter allows you to set persistent point data through its context menu. It offers two modes for setting the persistent data. Choose either “Set one Point” or “Set Multiple Points”. After clicking either of these, the Rhino window will receive the focus (*).   A prompt will ask for the location of a Point.  One way to indicate point locations is by clicking in the Rhino view-ports. Another more precise option is to enter point co-ordinates via the Rhino command-line. If the command was “Set Multiple Points”, continue to enter additional points.  End the process with a right-click or a blank command-line entry.
+
+>¹A context menu is the menu which appears after right-clicking on a particular thing, or on one of its particular parts.  It may show different things depending on what the target of the click was.  The target is the context for the right-click.
+
+>²When a window receives the focus  this means it will receive mouse and keyboard input until the focus shifts to another window.  It may also appear in front of other windows, hiding them if they are sharing screen space.
+
 
 ![IMAGE](images/1-2-3/1-2-3_001-set-multiple-points.png)
 
