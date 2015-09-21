@@ -2,12 +2,13 @@
 
 #####Most parameters can store two different kinds of data: Volatile and Persistent. Volatile data inherits from one or more sources. Grasshopper reworks all volatile data whenever a new solution starts. Persistent data is data which has been specifically set by the user.
 
-####1.2.3.1. PERSISTENT DATA
-You access and manage persistent data through a parameter's context menu. Each parameter type shows a different manager. For example, a Point parameter allows you to set one or more points through its menu. 
-
 Let's review how a Point Parameter behaves.
 
-When you drag-and-drop a Point Parameter from the Params/Geometry Panel onto the canvas, the Parameter is orange. The orange color indicates it is generating a warning. It’s nothing serious, the warning is simply there to inform you that the parameter is empty (it contains no persistent records and it failed to collect volatile data) and thus has no effect on the outcome of the solution. The context menu of the Parameter offers two ways of setting persistent data: single and multiple. Right click on the parameter to set Multiple Points. Once you click on either of these menu items, the Grasshopper window will disappear and you will be asked to pick a point in one of the Rhino view-ports.
+When you drag-and-drop a Point Parameter from the Params/Geometry Panel onto the canvas, the Parameter is orange. The orange color indicates it is generating a warning. There is no need to worry because this behavior is normal. The warning is just meant to inform you the parameter is empty. In other words, it does not yet contain any persistent records and it has so far failed to collect volatile data. It cannot yet provide data to the rest of the Grasshopper definition.  In a typical definition, a lack of data from a parameter may prevent the rest of the definition from carrying out its actions. Thus rectifying such problems is a normal and necessary step. 
+
+
+####1.2.3.1. PERSISTENT DATA
+You access and manage persistent data through a parameter's context menu. Each parameter type shows a different manager. For example, a Point parameter allows you to set one or more points through its context menu. The context menu of the Point parameter offers two ways of setting persistent data: selecting a single point and or selecting multiple points. Right click on the parameter to access the context menu. If you click on either of these, the Grasshopper window will disappear. A prompt will ask you to pick a point in one of the Rhino view-ports.
 
 ![IMAGE](images/1-2-3/1-2-3_001-set-multiple-points.png)
 
