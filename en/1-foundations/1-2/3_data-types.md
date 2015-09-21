@@ -11,22 +11,22 @@ When you drag-and-drop a Point Parameter from the Params/Geometry Panel onto the
 Access and manage persistent data through a parameter's context menu¹. 
 Each parameter type shows a different manager. For example, a Point parameter allows you to set persistent point data through its context menu. It offers two modes for setting the persistent data. Choose either “Set one Point” or “Set Multiple Points”. After clicking either of these, the Rhino window will receive the focus (*).   A prompt will ask for the location of a Point.  One way to indicate point locations is by clicking in the Rhino view-ports. Another more precise option is to enter point co-ordinates via the Rhino command-line. If the command was “Set Multiple Points”, continue to enter additional points.  End the process with a right-click or a blank command-line entry.
 
->¹A context menu is the menu which appears after right-clicking on a particular thing, or on one of its particular parts.  It may show different things depending on what the target of the click was.  The target is the context for the right-click.
+>¹A context menu is the menu which appears after right-clicking.  It may show different things depending on what the target of the click was.  The location of the mouse during the right-click (its target) serves as the context for the user's action.
 
->²When a window receives the focus  this means it will receive mouse and keyboard input until the focus shifts to another window.  It may also appear in front of other windows, hiding them if they are sharing screen space.
+>²The window with the focus receives mouse and keyboard input until the focus shifts to another window. When multiple windows are on a display screen, the one with the focus may appear brighter or have a more colorful title-bar. It will always be in front of the other windows where-ever they overlap.
 
 
 ![IMAGE](images/1-2-3/1-2-3_001-set-multiple-points.png)
 
-Once you have defined all the points you can press Enter and they will become part of the Parameters persistent data record. This means the Parameter is now no longer empty and it turns from orange to gray. (Notice that the information balloon in the upper right corner also disappears as there are no more warnings). At this point you can use the points stored in this Parameter for any subsequent input in your definition.
+The points defined become part of the Parameters persistent data record. This means the Parameter is now no longer empty and it turns from orange to gray. Notice that the information balloon in the upper right corner also disappears as there are no more warnings. This point data flows forward through connecting wires for components to act on.
 
 ![IMAGE](images/1-2-3/1-2-3_002-parameter-persistent-data.png)
->1. The parameter is orange, indicating it contains no persistent records (and it failed to collect volatile data) and thus has no effect on the outcome of the solution. Right click on any parameter to set its persistent data.
-2. Once the parameter contains some persistent data, the component will turn from orange to gray.
-3. The tool-tip for the point parameter shows the stored persistent data. In this image, it shows a collection of referenced points.
+>1. The parameter's orange color indicates it has no data to pass on. Right click on any parameter to set persistent data for it to store. 
+2. Once the parameter has some data to pass, the component will turn from orange to gray.
+3. The tool-tip for the point parameter shows the stored persistent data. In this image, it shows a collection of two referenced Rhino points and a third, picked Grasshopper point. 
 
 ####1.2.3.2. VOLATILE DATA
-Volatile data, as the name suggests, is not permanent and will be destroyed each time the solution is expired. However, this will often trigger an event to rebuild the solution and update the scene. Generally speaking, most of the data generated ‘on the fly’ is considered volatile.
+Volatile data, as the name suggests, is not permanent; each expiry of the solution destroys it. Sometimes this may trigger an event to rebuild the solution and update the scene. Generally speaking, most of data generated ‘on-the-fly’ is volatile.
 
 As previously stated, Grasshopper data is stored in Parameters (either in Volatile or Persistent form) and is used in various Components. When data is not stored in the permanent record set of a Parameter, it must be inherited from elsewhere. Every Parameter (except output parameters) defines where it gets its data from and most Parameters are not very particular. You can plug a number Parameter (which just means that it is a decimal number) into an integer source and it will take care of the conversion.
 
