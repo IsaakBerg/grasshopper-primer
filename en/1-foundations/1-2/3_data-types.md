@@ -42,7 +42,7 @@ If you want the data to become volatile again, simply reconnect the wires to the
 Grasshopper has a variety of Parameters that offer you the ability to interface with the data that is begin supplied to Component inputs and thereby control for changing the result of your definition. Because they Parameters that change with our input, they generate Volatile Data.
 
 **Number Slider**
-The number slider is the most important and widely used Input Parameter. It allows us to output a value between two given extremes by interacting with its grip with our mouse. Sliders can be used to specify a value and see the change to our deifnition that comes with adjusting the grip, but a slider should also be thought of as the means to identify successful ranges of our definition.
+The number slider is the most important and widely used Input Parameter. It allows us to output a value between two given extremes by interacting with its grip with our mouse. Sliders can be used to specify a value and see the change to our definition that comes with adjusting the grip, but a slider should also be thought of as the means to identify successful ranges of our definition.
 
 ![IMAGE](images/1-2-3/1-2-3_004-number-slider.png)
 >1. Drag the slider grip to change the value - each time you do this, Grasshopper will recompute the solution.
